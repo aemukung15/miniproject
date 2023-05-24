@@ -1,20 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:miniproject/boxing_dance/boxing_dance1_10.dart';
-import 'package:miniproject/boxing_dance/boxing_dance1_11.dart';
-import 'package:miniproject/boxing_dance/boxing_dance1_12.dart';
-import 'package:miniproject/boxing_dance/boxing_dance1_13.dart';
-import 'package:miniproject/boxing_dance/boxing_dance1_14.dart';
-import 'package:miniproject/boxing_dance/boxing_dance1_9.dart';
-import 'package:miniproject/boxing_dance/boxing_dance2_1.dart';
-import 'package:miniproject/boxing_dance/boxing_dance2_2.dart';
-import 'package:miniproject/boxing_dance/boxing_dance2_3.dart';
-import 'package:miniproject/boxing_dance/boxing_dance2_4.dart';
-import 'package:miniproject/boxing_dance/boxing_dance2_5.dart';
-import 'package:miniproject/boxing_dance/boxing_dance2_6.dart';
-import 'package:miniproject/boxing_dance/boxing_dance2_7.dart';
-import 'package:miniproject/boxing_dance/boxing_dance2_8.dart';
-import 'package:miniproject/boxing_dance/boxing_dance2_9.dart';
-import 'package:miniproject/boxing_dance/developer.dart';
 
 class boxing_dance1_1 extends StatelessWidget {
   @override
@@ -23,63 +7,53 @@ class boxing_dance1_1 extends StatelessWidget {
         appBar: AppBar(
           title: const Text('1. ท่าเสือออกจากเหล่า'),
         ),
-        body: Center(
-            child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            GestureDetector(
-              onTap: () {
-                showDialog(
-                    context: context,
-                    builder: (_) => Image.asset("assets/1.png"));
-              },
-              child: Image.network(
-                "assets/1.png",
-                width: 300,
-                height: 300,
-                fit: BoxFit.cover,
-              ),
-            ),
+        body: Container(
+            child: Container(
+                child: Center(
+                    child: SelectionArea(
+                        child: Column(
+          children: <Widget>[
+            Container(
+                margin: const EdgeInsets.symmetric(vertical: 30),
+                child: Image.asset(
+                  "assets/1.png",
+                  width: 300,
+                  height: 300,
+                )),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  margin: EdgeInsets.symmetric(vertical: 5),
+                  margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
                     onPressed: () {
                       showDialog(
-                          context: context,
-                          // builder: (_) => Image.asset("assets/m1.gif"),
-                          builder: (BuildContext contextPopup) {
-                            return AlertDialog(
-                              content: Center(
-                                child: TextButton(
-                                  onPressed: () {
-                                    Navigator.of(contextPopup).pop();
-                                  },
-                                  child: Image.asset(
-                                    "assets/m1.gif",
-                                    width: 300,
-                                    height: 300,
-                                  ),
-                                ),
-                              ),
-                            );
-                          });
-                      child:
-                      Image.network(
-                        "assets/m1.gif",
-                        width: 300,
-                        height: 300,
-                        fit: BoxFit.cover,
-                      );
+  context: context,
+  builder: (BuildContext context) {
+    return Dialog(
+      child: GestureDetector(
+        onTap: () {
+          Navigator.of(context).pop();
+        },
+        child: Container(
+          width: double.infinity,
+          child: Image.asset(
+            "assets/m1.gif",
+            fit: BoxFit.contain,
+          ),
+        ),
+      ),
+    );
+  },
+);
+
                     },
                     icon: const Icon(Icons.accessibility),
                     label: const Text('กล้ามเนื้อ'),
                     style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.all(5),
-                        fixedSize: Size(150, 60),
-                        textStyle: TextStyle(
+                        padding: const EdgeInsets.all(5),
+                        fixedSize: const Size(150, 60),
+                        textStyle: const TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
                         )),
@@ -88,8 +62,8 @@ class boxing_dance1_1 extends StatelessWidget {
               ],
             ),
             Container(
-                padding: EdgeInsets.all(5),
-                child: Text('วิธีปฏิบัติ',
+                padding: const EdgeInsets.all(5),
+                child: const Text('วิธีปฏิบัติ',
                     style: TextStyle(
                         fontSize: 23,
                         color: Colors.black,
@@ -97,7 +71,7 @@ class boxing_dance1_1 extends StatelessWidget {
             Expanded(
                 child: SingleChildScrollView(
               child: Padding(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -116,6 +90,6 @@ class boxing_dance1_1 extends StatelessWidget {
               ),
             ))
           ],
-        )));
+        ))))));
   }
 }
