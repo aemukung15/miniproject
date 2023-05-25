@@ -21,7 +21,7 @@ class boxing_dance1_2 extends StatelessWidget {
                   width: 400,
                   height: 400,
                 )),
-                Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
@@ -33,7 +33,6 @@ class boxing_dance1_2 extends StatelessWidget {
                         MaterialPageRoute(builder: ((context) => muscle1_2())),
                       );
                     },
-                    
                     icon: const Icon(Icons.accessibility),
                     label: const Text('กล้ามเนื้อ'),
                     style: ElevatedButton.styleFrom(

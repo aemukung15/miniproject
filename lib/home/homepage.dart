@@ -26,7 +26,6 @@ import 'package:miniproject/boxing_dance/boxing_dance2_9.dart';
 import 'package:miniproject/boxing_dance/developer.dart';
 import 'package:miniproject/boxing_dance/record.dart';
 
-import '../drawer.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -44,9 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      appBar: AppBar(
-        title: const Text('รำมวยโบราณจังหวัดสกลนคร'),
-      ),
+      
       body: SingleChildScrollView(
         child: Container(
             child: Center(
@@ -95,7 +92,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         )))),
       ),
-      drawer: MyDrawer(),
     );
   }
 }

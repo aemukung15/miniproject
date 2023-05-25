@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miniproject/boxing_dance/Google_Bottom_Bar/Tab_bar.dart';
 import 'package:miniproject/home/homepage.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.brown,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const HomePage(title: 'Home',),
     );
   }
 }

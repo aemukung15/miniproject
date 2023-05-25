@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:miniproject/boxing_dance/Google_Bottom_Bar/Google_Bottom_Bar.dart';
 import '../drawer.dart';
 
 class boxing_dance1_1 extends StatelessWidget {
@@ -7,7 +7,10 @@ class boxing_dance1_1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('1. ท่าเสือออกจากเหล่า'),
+        title: Text('1. ท่าเสือออกจากเหล่า'),
+        // Google_Bottom_Bar(),
+        //       SizedBox(width: 8), // Add some spacing between the widgets
+        //       Text('1. ท่าเสือออกจากเหล่า'),
       ),
       body: Container(
         child: Container(
@@ -16,12 +19,45 @@ class boxing_dance1_1 extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Container(
-                      margin: const EdgeInsets.symmetric(vertical: 30),
-                      child: Image.asset(
-                        "assets/1.png",
-                        width: 300,
-                        height: 300,
-                      )),
+                    margin: const EdgeInsets.symmetric(vertical: 30),
+                  
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return Dialog(
+                                child: GestureDetector(
+                                  onTap: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  child: Container(
+                                    width: double.infinity,
+                                    child: Image.asset(
+                                      "assets/1.png",
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                ),
+                              );
+                            },
+                          );
+                        },
+                        child: Container(
+                          margin: const EdgeInsets.symmetric(vertical: 5),
+                          child: Image.asset(
+                            "assets/1.png",
+                            width: 300, // Set the desired width for the image
+                            height: 300, // Set the desired height for the image
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -75,7 +111,7 @@ class boxing_dance1_1 extends StatelessWidget {
                       padding: const EdgeInsets.all(8),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const <Widget>[
                           SizedBox(
                             height: 5,
                           ),
