@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:miniproject/Muscle/manual.dart';
+import '../manual.dart';
 import '../drawer.dart';
 
 class MyHomePage extends StatefulWidget {

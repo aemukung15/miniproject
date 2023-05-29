@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:miniproject/Muscle/manual.dart';
+import '../manual.dart';
 import '../drawer.dart';
 
+// ignore: camel_case_types
 class boxing_dance1_1 extends StatelessWidget {
+  const boxing_dance1_1({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('2. ท่าย่างสามขุม'),
+        title: const Text('1. ท่าเสือออกจากเหล่า'),
       ),
       body: Center(
         child: SelectionArea(
@@ -76,7 +78,7 @@ class boxing_dance1_1 extends StatelessWidget {
                               onTap: () {
                                 Navigator.of(context).pop();
                               },
-                              child: Container(
+                              child: SizedBox(
                                 width: double.infinity,
                                 child: Image.asset(
                                   "assets/1.png",
@@ -114,7 +116,7 @@ class boxing_dance1_1 extends StatelessWidget {
                                 onTap: () {
                                   Navigator.of(context).pop();
                                 },
-                                child: Container(
+                                child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
                                     "assets/m1.gif",

@@ -24,6 +24,8 @@ import 'package:miniproject/boxing_dance/boxing_dance2_8.dart';
 import 'package:miniproject/boxing_dance/boxing_dance2_9.dart';
 import 'package:miniproject/boxing_dance/developer.dart';
 import 'package:miniproject/boxing_dance/record.dart';
+import 'package:miniproject/home/homepage.dart';
+
 class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -38,6 +40,15 @@ class MyDrawer extends StatelessWidget {
                   style: TextStyle(fontSize: 30),
                 ),
               ),
+              // ListTile(
+              //   title: const Text("หน้าแรก"),
+              //   onTap: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => MyHomePage()),
+              //     );
+              //   },
+              // ),
               ListTile(
                 title: const Text("ประวัติรำมวยโบราณ"),
                 onTap: () {
