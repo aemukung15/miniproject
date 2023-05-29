@@ -6,20 +6,6 @@ class boxing_dance1_1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   backgroundColor: Color.fromRGBO(70, 61, 7, 0.578),
-      //   title: TabBar(onTap: (index) {}, tabs: const <Tab>[
-      //     Tab(
-      //       icon: Icon(Icons.home),
-      //     ),
-      //     Tab(
-      //       icon: Icon(Icons.person_pin_outlined),
-      //     ),
-      //     Tab(
-      //       icon: Icon(Icons.camera_alt),
-      //     ),
-      //   ]),
-      // ),
       appBar: AppBar(
         title: const Text('2. ท่าย่างสามขุม'),
       ),
@@ -28,52 +14,54 @@ class boxing_dance1_1 extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              margin: const EdgeInsets.symmetric(vertical: 5),
-              child: ElevatedButton.icon(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const manual()),
-                  );
-                },
-                icon: const Icon(Icons.book),
-                label: const Text("คู่มือ"),
-                style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.all(20.0),
-                  fixedSize: const Size(150, 60),
-                  textStyle: const TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 5),
+                    child: ElevatedButton.icon(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const manual()),
+                        );
+                      },
+                      icon: const Icon(Icons.book),
+                      label: const Text("คู่มือ"),
+                      style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.all(20.0),
+                        fixedSize: const Size(150, 60),
+                        textStyle: const TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
                   ),
-                ),
-              ),
-            ),
-            const SizedBox(width: 16), // Add some spacing between the buttons
-            Container(
-              margin: const EdgeInsets.symmetric(vertical: 5),
-              child: ElevatedButton.icon(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                icon: const Icon(Icons.arrow_back),
-                label: const Text("คู่มือ"),
-                style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.all(20.0),
-                  fixedSize: const Size(150, 60),
-                  textStyle: const TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
+                  const SizedBox(
+                      width: 16), // Add some spacing between the buttons
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 5),
+                    child: ElevatedButton.icon(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      icon: const Icon(Icons.arrow_back),
+                      label: const Text("ย้อนกลับ"),
+                      style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.all(20.0),
+                        fixedSize: const Size(150, 60),
+                        textStyle: const TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
                   ),
-                ),
+                ],
               ),
-            ),
-          ],
-        ),
               Container(
-                margin: const EdgeInsets.symmetric(vertical: 30),
+                margin: const EdgeInsets.symmetric(vertical: 5),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

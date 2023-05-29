@@ -79,7 +79,7 @@ class boxing_dance1_10 extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 20),
             ),
-            Text(
+            const Text(
               '6. ให้ปฏิบัติเหมือนจังหวะที่ 2',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 20),
