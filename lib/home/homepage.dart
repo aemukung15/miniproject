@@ -95,26 +95,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         fontSize: 40,
                         color: Colors.black,
                         fontWeight: FontWeight.bold))),
-            Container(
-                padding: const EdgeInsets.all(8.0),
-                child: const Text('ท่ารำมวยโบราณ',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 40,
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold))),
-            Container(
-                padding: const EdgeInsets.all(8.0),
-                child: const Text('จังหวัดสกลนคร',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 40,
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold))),
           ],
         ))),
       ),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
     );
   }
 }

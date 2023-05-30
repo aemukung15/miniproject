@@ -24,9 +24,10 @@ import 'package:miniproject/boxing_dance/boxing_dance2_8.dart';
 import 'package:miniproject/boxing_dance/boxing_dance2_9.dart';
 import 'package:miniproject/boxing_dance/developer.dart';
 import 'package:miniproject/boxing_dance/record.dart';
-import 'package:miniproject/home/homepage.dart';
 
 class MyDrawer extends StatelessWidget {
+  const MyDrawer({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -38,23 +39,15 @@ class MyDrawer extends StatelessWidget {
                 child: Text(
                   'เมนู',
                   style: TextStyle(fontSize: 30),
+                  textAlign: TextAlign.center,
                 ),
               ),
-              // ListTile(
-              //   title: const Text("หน้าแรก"),
-              //   onTap: () {
-              //     Navigator.push(
-              //       context,
-              //       MaterialPageRoute(builder: (context) => MyHomePage()),
-              //     );
-              //   },
-              // ),
               ListTile(
                 title: const Text("ประวัติรำมวยโบราณ"),
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => record()),
+                    MaterialPageRoute(builder: (context) => const record()),
                   );
                 },
               ),
@@ -70,7 +63,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance1_1()),
+                            builder: (context) => const boxing_dance1_1()),
                       );
                     },
                   ),
@@ -80,7 +73,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance1_2()),
+                            builder: (context) => const boxing_dance1_2()),
                       );
                     },
                   ),
@@ -90,7 +83,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance1_3()),
+                            builder: (context) => const boxing_dance1_3()),
                       );
                     },
                   ),
@@ -100,7 +93,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance1_4()),
+                            builder: (context) => const boxing_dance1_4()),
                       );
                     },
                   ),
@@ -110,7 +103,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance1_5()),
+                            builder: (context) => const boxing_dance1_5()),
                       );
                     },
                   ),
@@ -120,7 +113,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance1_6()),
+                            builder: (context) => const boxing_dance1_6()),
                       );
                     },
                   ),
@@ -130,7 +123,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance1_7()),
+                            builder: (context) => const boxing_dance1_7()),
                       );
                     },
                   ),
@@ -140,7 +133,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance1_8()),
+                            builder: (context) => const boxing_dance1_8()),
                       );
                     },
                   ),
@@ -150,7 +143,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance1_9()),
+                            builder: (context) => const boxing_dance1_9()),
                       );
                     },
                   ),
@@ -160,7 +153,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance1_10()),
+                            builder: (context) => const boxing_dance1_10()),
                       );
                     },
                   ),
@@ -170,7 +163,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance1_11()),
+                            builder: (context) => const boxing_dance1_11()),
                       );
                     },
                   ),
@@ -180,7 +173,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance1_12()),
+                            builder: (context) => const boxing_dance1_12()),
                       );
                     },
                   ),
@@ -190,7 +183,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance1_13()),
+                            builder: (context) => const boxing_dance1_13()),
                       );
                     },
                   ),
@@ -200,7 +193,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance1_14()),
+                            builder: (context) => const boxing_dance1_14()),
                       );
                     },
                   ),
@@ -218,7 +211,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance2_1()),
+                            builder: (context) => const boxing_dance2_1()),
                       );
                     },
                   ),
@@ -228,7 +221,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance2_2()),
+                            builder: (context) => const boxing_dance2_2()),
                       );
                     },
                   ),
@@ -238,7 +231,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance2_3()),
+                            builder: (context) => const boxing_dance2_3()),
                       );
                     },
                   ),
@@ -248,7 +241,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance2_4()),
+                            builder: (context) => const boxing_dance2_4()),
                       );
                     },
                   ),
@@ -258,7 +251,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance2_5()),
+                            builder: (context) => const boxing_dance2_5()),
                       );
                     },
                   ),
@@ -268,7 +261,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance2_6()),
+                            builder: (context) => const boxing_dance2_6()),
                       );
                     },
                   ),
@@ -278,7 +271,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance2_7()),
+                            builder: (context) => const boxing_dance2_7()),
                       );
                     },
                   ),
@@ -288,7 +281,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance2_8()),
+                            builder: (context) => const boxing_dance2_8()),
                       );
                     },
                   ),
@@ -298,7 +291,7 @@ class MyDrawer extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => boxing_dance2_9()),
+                            builder: (context) => const boxing_dance2_9()),
                       );
                     },
                   ),
@@ -309,7 +302,7 @@ class MyDrawer extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => developer()),
+                    MaterialPageRoute(builder: (context) => const developer()),
                   );
                 },
               ),

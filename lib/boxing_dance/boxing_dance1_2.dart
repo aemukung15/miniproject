@@ -173,7 +173,7 @@ class boxing_dance1_2 extends StatelessWidget {
           ),
         ),
       ),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
     );
   }
 }

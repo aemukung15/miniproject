@@ -81,7 +81,7 @@ class boxing_dance2_3 extends StatelessWidget {
                               child: SizedBox(
                                 width: double.infinity,
                                 child: Image.asset(
-                                  "assets/17.png",
+                                  "assets/17.jpg",
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -93,7 +93,7 @@ class boxing_dance2_3 extends StatelessWidget {
                     child: Container(
                       margin: const EdgeInsets.symmetric(vertical: 5),
                       child: Image.asset(
-                        "assets/17.png",
+                        "assets/17.jpg",
                         width: 300, // Set the desired width for the image
                         height: 300, // Set the desired height for the image
                       ),
@@ -173,7 +173,7 @@ class boxing_dance2_3 extends StatelessWidget {
           ),
         ),
       ),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
     );
   }
 }
