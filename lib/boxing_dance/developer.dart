@@ -10,7 +10,7 @@ class developer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ผู้พัฒนา'),
+        title: const Text('คณะผู้พัฒนา'),
       ),
       body: Center(
         child: SingleChildScrollView(

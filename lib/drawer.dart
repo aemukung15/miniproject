@@ -24,6 +24,7 @@ import 'package:miniproject/boxing_dance/boxing_dance2_8.dart';
 import 'package:miniproject/boxing_dance/boxing_dance2_9.dart';
 import 'package:miniproject/boxing_dance/developer.dart';
 import 'package:miniproject/boxing_dance/record.dart';
+import 'package:miniproject/home/homepage.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -35,14 +36,30 @@ class MyDrawer extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
+              const SizedBox(width: 10),
               const DrawerHeader(
                 child: Text(
+                  decoration: BoxConstraints(
+                    color: Colors.brown,
+                  ),
                   'เมนู',
-                  style: TextStyle(fontSize: 30),
+                  style: TextStyle(fontSize: 50),
                   textAlign: TextAlign.center,
+                  selectionColor: Colors.brown,
                 ),
               ),
               ListTile(
+                leading: const Icon(Icons.home),
+                title: const Text("หน้าแรก"),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const MyHomePage(title: 'myhomepage',)),
+                  );
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.history_edu),
                 title: const Text("ประวัติรำมวยโบราณ"),
                 onTap: () {
                   Navigator.push(
@@ -52,6 +69,7 @@ class MyDrawer extends StatelessWidget {
                 },
               ),
               ExpansionTile(
+                leading: const Icon(Icons.format_list_numbered_rtl),
                 title: const Text('ท่ารำเดี่ยว'),
                 subtitle: const Text(
                   'จำนวน 12 ท่า',
@@ -200,6 +218,7 @@ class MyDrawer extends StatelessWidget {
                 ],
               ),
               ExpansionTile(
+                leading: const Icon(Icons.format_list_numbered_rtl),
                 title: const Text('ท่ารำหมู่'),
                 subtitle: const Text(
                   'จำนวน 9 ท่า',
@@ -298,6 +317,7 @@ class MyDrawer extends StatelessWidget {
                 ],
               ),
               ListTile(
+                leading: const Icon(Icons.person_search),
                 title: const Text("คณะผู้พัฒนา"),
                 onTap: () {
                   Navigator.push(
