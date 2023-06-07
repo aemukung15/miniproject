@@ -16,52 +16,51 @@ class boxing_dance2_6 extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    margin: const EdgeInsets.symmetric(vertical: 5),
-                    child: ElevatedButton.icon(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const manual()),
-                        );
-                      },
-                      icon: const Icon(Icons.book),
-                      label: const Text("คู่มือ"),
-                      style: ElevatedButton.styleFrom(
-                        padding: const EdgeInsets.all(20.0),
-                        fixedSize: const Size(150, 60),
-                        textStyle: const TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                        ),
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const SizedBox(width: 16), // Add some spacing between the buttons
+                Container(
+                  margin: const EdgeInsets.symmetric(vertical: 5),
+                  child: ElevatedButton.icon(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: const Icon(Icons.arrow_back),
+                    label: const Text("ย้อนกลับ"),
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.all(20.0),
+                      fixedSize: const Size(150, 60),
+                      textStyle: const TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
-                  const SizedBox(
-                      width: 16), // Add some spacing between the buttons
-                  Container(
-                    margin: const EdgeInsets.symmetric(vertical: 5),
-                    child: ElevatedButton.icon(
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                      icon: const Icon(Icons.arrow_back),
-                      label: const Text("ย้อนกลับ"),
-                      style: ElevatedButton.styleFrom(
-                        padding: const EdgeInsets.all(20.0),
-                        fixedSize: const Size(150, 60),
-                        textStyle: const TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                        ),
+                ),
+                Container(
+                  margin: const EdgeInsets.symmetric(vertical: 5),
+                  child: ElevatedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const manual()),
+                      );
+                    },
+                    icon: const Icon(Icons.book),
+                    label: const Text("คู่มือ"),
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.all(20.0),
+                      fixedSize: const Size(150, 60),
+                      textStyle: const TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
-                ],
-              ),
+                ),
+                
+              ],
+            ),
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 5),
               ),

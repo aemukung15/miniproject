@@ -36,12 +36,8 @@ class MyDrawer extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              const SizedBox(width: 10),
               const DrawerHeader(
                 child: Text(
-                  decoration: BoxConstraints(
-                    color: Colors.brown,
-                  ),
                   'เมนู',
                   style: TextStyle(fontSize: 50),
                   textAlign: TextAlign.center,
@@ -54,13 +50,16 @@ class MyDrawer extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const MyHomePage(title: 'myhomepage',)),
+                    MaterialPageRoute(
+                        builder: (context) => const MyHomePage(
+                              title: 'myhomepage',
+                            )),
                   );
                 },
               ),
               ListTile(
                 leading: const Icon(Icons.history_edu),
-                title: const Text("ประวัติรำมวยโบราณ"),
+                title: const Text("ประวัติความเป็นมารำมวยโบราณ"),
                 onTap: () {
                   Navigator.push(
                     context,

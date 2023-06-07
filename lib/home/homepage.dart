@@ -30,6 +30,25 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                const SizedBox(width: 16), // Add some spacing between the buttons
+                Container(
+                  margin: const EdgeInsets.symmetric(vertical: 5),
+                  child: ElevatedButton.icon(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: const Icon(Icons.arrow_back),
+                    label: const Text("ย้อนกลับ"),
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.all(20.0),
+                      fixedSize: const Size(150, 60),
+                      textStyle: const TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
@@ -51,25 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                const SizedBox(width: 16), // Add some spacing between the buttons
-                Container(
-                  margin: const EdgeInsets.symmetric(vertical: 5),
-                  child: ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    icon: const Icon(Icons.arrow_back),
-                    label: const Text("ย้อนกลับ"),
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.all(20.0),
-                      fixedSize: const Size(150, 60),
-                      textStyle: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
+                
               ],
             ),
             Container(

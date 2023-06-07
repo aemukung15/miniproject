@@ -45,7 +45,7 @@ class record extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(width: 16), // Add some spacing between the buttons
+                    const SizedBox(width: 5), // Add some spacing between the buttons
                     Container(
                       margin: const EdgeInsets.symmetric(vertical: 5),
                       child: ElevatedButton.icon(
@@ -66,7 +66,6 @@ class record extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(width: 5),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -157,7 +156,6 @@ class record extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const SizedBox(width: 5),
                     GestureDetector(
                       onTap: () {
                         showDialog(
