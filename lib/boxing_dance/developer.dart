@@ -1,3 +1,5 @@
+// ignore_for_file: dead_code
+
 import 'package:flutter/material.dart';
 import 'package:miniproject/drawer.dart';
 import 'package:miniproject/manual.dart';
@@ -19,6 +21,26 @@ class developer extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  const SizedBox(
+                      width: 16), // Add some spacing between the buttons
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 5),
+                    child: ElevatedButton.icon(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      icon: const Icon(Icons.arrow_back),
+                      label: const Text("ย้อนกลับ"),
+                      style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.all(20.0),
+                        fixedSize: const Size(150, 60),
+                        textStyle: const TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 5),
                     child: ElevatedButton.icon(
@@ -31,26 +53,6 @@ class developer extends StatelessWidget {
                       },
                       icon: const Icon(Icons.book),
                       label: const Text("คู่มือ"),
-                      style: ElevatedButton.styleFrom(
-                        padding: const EdgeInsets.all(20.0),
-                        fixedSize: const Size(150, 60),
-                        textStyle: const TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                      width: 16), // Add some spacing between the buttons
-                  Container(
-                    margin: const EdgeInsets.symmetric(vertical: 5),
-                    child: ElevatedButton.icon(
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                      icon: const Icon(Icons.arrow_back),
-                      label: const Text("ย้อนกลับ"),
                       style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.all(20.0),
                         fixedSize: const Size(150, 60),
@@ -88,6 +90,16 @@ class developer extends StatelessWidget {
                               ),
                             ),
                           );
+                          const Text('นายสิทธิพร วงศ์บาตร',
+                              style: TextStyle(fontSize: 20));
+                          const Text('รหัสนักศึกษา 63102105136',
+                              style: TextStyle(fontSize: 20));
+                          const Text('สาขาวิทยาการคอมพิวเตอร์',
+                              style: TextStyle(fontSize: 20));
+                          const Text('คณะวิทยาศาสตร์และเทคโนโลยี',
+                              style: TextStyle(fontSize: 20));
+                          const Text('มหาลัยราชภัฏสกลนคร',
+                              style: TextStyle(fontSize: 20));
                         },
                       );
                     },
@@ -132,6 +144,14 @@ class developer extends StatelessWidget {
                               ),
                             ),
                           );
+                          const Text('อาจารย์ที่ปรึกษา ดร.นิภาพร ชนะมาร',
+                              style: TextStyle(fontSize: 20));
+                          const Text('ผู้ชำนาญการ สาขาวิทยาการคอมพิวเตอร์',
+                              style: TextStyle(fontSize: 20));
+                          const Text('คณะวิทยาศาสตร์และเทคโนโลยี',
+                              style: TextStyle(fontSize: 20));
+                          const Text('มหาลัยราชภัฏสกลนคร',
+                              style: TextStyle(fontSize: 20));
                         },
                       );
                     },
@@ -147,13 +167,12 @@ class developer extends StatelessWidget {
                 ],
               ),
               const Text('อาจารย์ที่ปรึกษา ดร.นิภาพร ชนะมาร',
-                style: TextStyle(fontSize: 20)),
+                  style: TextStyle(fontSize: 20)),
               const Text('ผู้ชำนาญการ สาขาวิทยาการคอมพิวเตอร์',
-                style: TextStyle(fontSize: 20)),
+                  style: TextStyle(fontSize: 20)),
               const Text('คณะวิทยาศาสตร์และเทคโนโลยี',
-                style: TextStyle(fontSize: 20)),
-              const Text('มหาลัยราชภัฏสกลนคร', 
-                style: TextStyle(fontSize: 20))
+                  style: TextStyle(fontSize: 20)),
+              const Text('มหาลัยราชภัฏสกลนคร', style: TextStyle(fontSize: 20)),
             ],
           ),
         ),
