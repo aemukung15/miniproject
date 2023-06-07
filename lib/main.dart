@@ -6,7 +6,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,8 +15,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.brown,
       ),
-      home: const MyHomePage(
-        title: 'Home',
+      home: Container(
+        color: const Color.fromARGB(
+            255, 255, 204, 204), // Set the background color here
+        child: const MyHomePage(
+          title: 'Home',
+        ),
       ),
     );
   }

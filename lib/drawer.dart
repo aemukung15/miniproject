@@ -25,6 +25,7 @@ import 'package:miniproject/boxing_dance/boxing_dance2_9.dart';
 import 'package:miniproject/boxing_dance/developer.dart';
 import 'package:miniproject/boxing_dance/record.dart';
 import 'package:miniproject/home/homepage.dart';
+import 'package:miniproject/lib/bibliography.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -322,6 +323,16 @@ class MyDrawer extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const developer()),
+                  );
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.person_search),
+                title: const Text("บรรณานุกรม"),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const bibliography()),
                   );
                 },
               ),
