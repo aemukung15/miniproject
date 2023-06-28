@@ -9,7 +9,7 @@ class boxing_dance1_9 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('9. ท่ากินนรเข้าถ้า'),
+        title: const Text('ท่ากินนรเข้าถ้า'),
       ),
       body: Center(
         child: SelectionArea(
@@ -37,6 +37,7 @@ class boxing_dance1_9 extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(width: 16),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
@@ -118,7 +119,7 @@ class boxing_dance1_9 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_9.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -148,26 +149,36 @@ class boxing_dance1_9 extends StatelessWidget {
                           color: Colors.black,
                           fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่ากินนรเข้าถ้า มีลักษณะเด่น คือ ผู้แสดงจะโน้มตัวไปข้างหน้า แล้วถอยขาข้างหนึ่งยื่นไปข้างหลัง ค่อย ๆ ย่อตัวให้เตี้ยลงทีละน้อย จนขาหลังถึงพื้น ส่วนขาหน้าตั้งเข่าชันไว้ ส่วนมือทั้งสองก็ร่ายรำไปตามจังหวะดนตรีเรียกว่า “กินนรเข้าถ้า” ต่อมาจะโน้มตัวไป ข้างหลัง จนนั่งอยู่บนส้นเท้าข้างหลัง ส่วนมือทั้งสองก็ร่ายรำไปเรื่อย ๆ แล้วโน้มตัวไปข้างหน้าจนเข่าที่ตั้งชันอยู่จดกับพื้น เรียกว่า “กินนรลงสรง”",
+                            style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่ากินนรเข้าถ้า มีลักษณะเด่น คือ ผู้แสดงจะโน้มตัวไปข้างหน้า แล้วถอยขาข้างหนึ่งยื่นไปข้างหลัง ค่อย ๆ ย่อตัวให้เตี้ยลงทีละน้อย จนขาหลังถึงพื้น ส่วนขาหน้าตั้งเข่าชันไว้ ส่วนมือทั้งสองก็ร่ายรำไปตามจังหวะดนตรีเรียกว่า “กินนรเข้าถ้า” ต่อมาจะโน้มตัวไป ข้างหลัง จนนั่งอยู่บนส้นเท้าข้างหลัง ส่วนมือทั้งสองก็ร่ายรำไปเรื่อย ๆ แล้วโน้มตัวไปข้างหน้าจนเข่าที่ตั้งชันอยู่จดกับพื้น เรียกว่า “กินนรลงสรง”",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),

@@ -64,9 +64,7 @@ class developer extends StatelessWidget {
                   ),
                 ],
               ),
-              Container(
-                margin: const EdgeInsets.symmetric(vertical: 5),
-              ),
+              const SizedBox(width: 16),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

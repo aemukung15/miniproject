@@ -9,7 +9,7 @@ class boxing_dance1_2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('2. ท่าย่างสามขุม'),
+        title: const Text('ท่าย่างสามขุม'),
       ),
       body: Center(
         child: SelectionArea(
@@ -37,6 +37,7 @@ class boxing_dance1_2 extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(width: 16),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
@@ -118,7 +119,7 @@ class boxing_dance1_2 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_2.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -148,26 +149,36 @@ class boxing_dance1_2 extends StatelessWidget {
                           color: Colors.black,
                           fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่าย่างสามขุม มีลักษณะเด่นคือ การเหยาะย่างอย่างทะมัดทะแมง ซึ่งเป็นท่าต่อเนื่องจากรำถวายแถน คือให้ลดแขน ทั้งสองที่ชูเหนือศีรษะลงมา ให้มือข้างหนึ่งวางไว้ที่ขาซึ่งยกอยู่แล้ว โดยกำมือตั้งไว้ที่ขา และมืออีกข้างหนึ่งกำวางไว้ที่บั้นเอว กางศอกทั้งสองข้าง ยกไหล่ให้ผึ่งผาย ส่ายตามองหาคู่ต่อสู้ แล้วเหยาะย่างไปข้างหน้า โดยกระทืบเท้าลงซ้นอย่างหนัก 3 ครั้ง แล้วยืนทรงตัวด้วยขาข้างเดียวอย่างสง่า ผ่าเผย โดยสอดส่ายสายตาเข้าหาคู่ต่อสู้",
+                            style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่าย่างสามขุม มีลักษณะเด่นคือ การเหยาะย่างอย่างทะมัดทะแมง ซึ่งเป็นท่าต่อเนื่องจากรำถวายแถน คือให้ลดแขน ทั้งสองที่ชูเหนือศีรษะลงมา ให้มือข้างหนึ่งวางไว้ที่ขาซึ่งยกอยู่แล้ว โดยกำมือตั้งไว้ที่ขา และมืออีกข้างหนึ่งกำวางไว้ที่บั้นเอว กางศอกทั้งสองข้าง ยกไหล่ให้ผึ่งผาย ส่ายตามองหาคู่ต่อสู้ แล้วเหยาะย่างไปข้างหน้า โดยกระทืบเท้าลงซ้นอย่างหนัก 3 ครั้ง แล้วยืนทรงตัวด้วยขาข้างเดียวอย่างสง่า ผ่าเผย โดยสอดส่ายสายตาเข้าหาคู่ต่อสู้",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),

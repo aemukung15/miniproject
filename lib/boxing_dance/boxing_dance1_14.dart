@@ -9,7 +9,7 @@ class boxing_dance1_14 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('14. ท่ายกแขนสองข้าง'),
+        title: const Text('ท่ายกแขนสองข้าง'),
       ),
       body: Center(
         child: SelectionArea(
@@ -37,6 +37,7 @@ class boxing_dance1_14 extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(width: 16),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
@@ -118,7 +119,7 @@ class boxing_dance1_14 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_14.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -148,26 +149,36 @@ class boxing_dance1_14 extends StatelessWidget {
                           color: Colors.black,
                           fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่ายกแขนสองข้าง และส่งขาข้างหนึ่ง ไปข้างหลัง กางแขนทั้งสองออกเต็มที่ ให้ได้ระดับไหล่ แล้วม้วนแขนทั้งสองเข้ามาในลำตัวบริเวณสีข้างทั้งสอง แล้วโน้มตัวไปข้างหน้าเหยาะย่างไปตามจังหวะดนตรีท่าช้างโขลงทะลายป่า เป็นท่าสุดท้ายของการแสดงมวยโบราณท่ารำเดี่ยว มีลักษณะเด่น คือ ผู้แสดงจะเหวี่ยง",
+                            style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่ายกแขนสองข้าง และส่งขาข้างหนึ่ง ไปข้างหลัง กางแขนทั้งสองออกเต็มที่ ให้ได้ระดับไหล่ แล้วม้วนแขนทั้งสองเข้ามาในลำตัวบริเวณสีข้างทั้งสอง แล้วโน้มตัวไปข้างหน้าเหยาะย่างไปตามจังหวะดนตรีท่าช้างโขลงทะลายป่า เป็นท่าสุดท้ายของการแสดงมวยโบราณท่ารำเดี่ยว มีลักษณะเด่น คือ ผู้แสดงจะเหวี่ยง",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),

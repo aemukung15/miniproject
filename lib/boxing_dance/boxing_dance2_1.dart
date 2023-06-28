@@ -10,7 +10,7 @@ class boxing_dance2_1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('1. ท่ากาเต้นก้อนไถ'),
+        title: const Text('ท่ากาเต้นก้อนไถ'),
       ),
       body: Center(
         child: SelectionArea(
@@ -38,6 +38,7 @@ class boxing_dance2_1 extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(width: 16),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
@@ -119,7 +120,7 @@ class boxing_dance2_1 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_2_1.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -149,26 +150,36 @@ class boxing_dance2_1 extends StatelessWidget {
                           color: Colors.black,
                           fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่ากาเต้นก้อนไถ ผู้รำจะกำมือทั้งสองข้างไว้ที่บั้นเอว ยกไหล่กางศอกขาย่อกางออกพองามก้าวไปข้างหน้าในลักษณะเต้นและลงส้นเท้าเอียงตัวเล็กน้อย เข้ากับจังหวะดนตรี แขนทั้งสองกาง กำมือติดเอว ส่ายตัวช้าๆไปตามจังหวะอันเป็นจินตนาการกาที่เต้นไปตามก้อนดินที่ชาวนาไถพลิกขึ้นมา เพื่อจะหากินอาหารปลา จิ้งหรีดและตัวแมลงต่างๆ",
+                            style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่ากาเต้นก้อนไถ ผู้รำจะกำมือทั้งสองข้างไว้ที่บั้นเอว ยกไหล่กางศอกขาย่อกางออกพองามก้าวไปข้างหน้าในลักษณะเต้นและลงส้นเท้าเอียงตัวเล็กน้อย เข้ากับจังหวะดนตรี แขนทั้งสองกาง กำมือติดเอว ส่ายตัวช้าๆไปตามจังหวะอันเป็นจินตนาการกาที่เต้นไปตามก้อนดินที่ชาวนาไถพลิกขึ้นมา เพื่อจะหากินอาหารปลา จิ้งหรีดและตัวแมลงต่างๆ",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),

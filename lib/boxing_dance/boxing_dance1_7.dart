@@ -9,7 +9,7 @@ class boxing_dance1_7 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('7. ท่าไก่เลียบเล้า'),
+        title: const Text('ท่าไก่เลียบเล้า'),
       ),
       body: Center(
         child: SelectionArea(
@@ -60,9 +60,7 @@ class boxing_dance1_7 extends StatelessWidget {
                 ),
               ],
             ),
-              Container(
-                margin: const EdgeInsets.symmetric(vertical: 5),
-              ),
+            const SizedBox(width: 16),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -117,7 +115,7 @@ class boxing_dance1_7 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_7.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -139,34 +137,37 @@ class boxing_dance1_7 extends StatelessWidget {
                   ),
                 ],
               ),
-              Container(
-                  padding: const EdgeInsets.all(5),
-                  child: const Text('วิธีปฏิบัติ',
-                      style: TextStyle(
-                          fontSize: 23,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่าไก่เลียบเล้า มีลักษณะเด่น คือ ผู้แสดงจะย่อขาที่ยืนอยู่ให้สูงขึ้นในระดับเอว เปลี่ยนขาที่ใช้เท้ากระทุ้งพื้นเป็นยืนขาเดียว แขนทั้งสองยกขึ้นร่ายรำไปมาแบบ “นาคีม้วนหาง” แล้วเกร็งท่อนแขนข้างหนึ่ง ยกขึ้นตั้งฉากกับล าตัวตั้งศอกไว้ที่เข่า แขนอีกข้างหนึ่งกางศอกกำมือตั้งอยู่ที่บั้นเอว แล้วขยับลำตัวและเหยาะย่างอย่างมีจังหวะ แล้วยืนทรงตัวด้วยขาข้างเดียว ยืดตัวตรงอย่างสง่าผ่าเผย ส่วนแขนทั้งสองข้างก็ร่ายรำไป แล้วม้วนข้อมือยกสูงขึ้น ๆ จนสุดแขนในรูปตัว วี และเงยหน้ามองตามมือขึ้นไป แล้วตวัดแขนเหวี่ยงข้ามศีรษะย่อเข่าลง และหมุนตัวกลับขยับลำตัวเหยาะย่างอย่างมีจังหวะ ทำเหมือนครั้งแรก แต่คนละข้างไป ทำกี่รอบก็ได้แล้วแต่พละกำลังของผู้แสดง",
+                            style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่าไก่เลียบเล้า มีลักษณะเด่น คือ ผู้แสดงจะย่อขาที่ยืนอยู่ให้สูงขึ้นในระดับเอว เปลี่ยนขาที่ใช้เท้ากระทุ้งพื้นเป็นยืนขาเดียว แขนทั้งสองยกขึ้นร่ายรำไปมาแบบ “นาคีม้วนหาง” แล้วเกร็งท่อนแขนข้างหนึ่ง ยกขึ้นตั้งฉากกับล าตัวตั้งศอกไว้ที่เข่า แขนอีกข้างหนึ่งกางศอกกำมือตั้งอยู่ที่บั้นเอว แล้วขยับลำตัวและเหยาะย่างอย่างมีจังหวะ แล้วยืนทรงตัวด้วยขาข้างเดียว ยืดตัวตรงอย่างสง่าผ่าเผย ส่วนแขนทั้งสองข้างก็ร่ายรำไป แล้วม้วนข้อมือยกสูงขึ้น ๆ จนสุดแขนในรูปตัว วี และเงยหน้ามองตามมือขึ้นไป แล้วตวัดแขนเหวี่ยงข้ามศีรษะย่อเข่าลง และหมุนตัวกลับขยับลำตัวเหยาะย่างอย่างมีจังหวะ ทำเหมือนครั้งแรก แต่คนละข้างไป ทำกี่รอบก็ได้แล้วแต่พละกำลังของผู้แสดง",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),

@@ -9,7 +9,7 @@ class boxing_dance2_7 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('7. ท่าทวงฮัก กวักชู้'),
+        title: const Text('ท่าทวงฮัก กวักชู้'),
       ),
       body: Center(
         child: SelectionArea(
@@ -58,12 +58,9 @@ class boxing_dance2_7 extends StatelessWidget {
                     ),
                   ),
                 ),
-                
               ],
             ),
-              Container(
-                margin: const EdgeInsets.symmetric(vertical: 5),
-              ),
+              const SizedBox(width: 16),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -118,7 +115,7 @@ class boxing_dance2_7 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_2_7.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -148,26 +145,36 @@ class boxing_dance2_7 extends StatelessWidget {
                           color: Colors.black,
                           fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่าทวงฮัก กวักชู้ รำจะเต้นไปข้างหน้าสามก้าว ในรูปทะแยงมุมแบบลายฟันปลา พร้อมกับแขนทั้งสองข้างบนตีสีข้างให้ดัง คล้ายไก่ตีปีก ตามจังหวะเท้าที่ที่เต้นไป แล้วเอี้ยวตัวส่งแขนทั้งสองยื่นไปข้างหน้า ให้ขนานกับพื้น แบมือทั้งสองกวักไปข้างหน้าตามจังหวะดนตรี ส่วนขาที่อยู่ข้างหน้ายืนเป็นหลักย่อเข่าลงเล็กน้อย อีกขาหนึ่งไขว้หลังยื่นไปข้างหน้าใช้ปลายเท้าตบพื้นเป็นจังหวะเข้ากับมือที่กวักอยู่ประมาณ 3 ครั้ง ต่อไปก็ให้เต้นไปข้างหน้าสามก้าว แขนทั้งสองตีปีกและยื่นไปข้างหน้า ทำนองเรียกคนรักให้กลับมา ส่วนเท้าก็ใช้ปลายตบพื้นตามจังหวะที่มือกวัก เหมือนกับที่ทำมาแล้ว แต่เป็นการทำสลับขวา-ซ้าย",
+                            style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่าทวงฮัก กวักชู้ รำจะเต้นไปข้างหน้าสามก้าว ในรูปทะแยงมุมแบบลายฟันปลา พร้อมกับแขนทั้งสองข้างบนตีสีข้างให้ดัง คล้ายไก่ตีปีก ตามจังหวะเท้าที่ที่เต้นไป แล้วเอี้ยวตัวส่งแขนทั้งสองยื่นไปข้างหน้า ให้ขนานกับพื้น แบมือทั้งสองกวักไปข้างหน้าตามจังหวะดนตรี ส่วนขาที่อยู่ข้างหน้ายืนเป็นหลักย่อเข่าลงเล็กน้อย อีกขาหนึ่งไขว้หลังยื่นไปข้างหน้าใช้ปลายเท้าตบพื้นเป็นจังหวะเข้ากับมือที่กวักอยู่ประมาณ 3 ครั้ง ต่อไปก็ให้เต้นไปข้างหน้าสามก้าว แขนทั้งสองตีปีกและยื่นไปข้างหน้า ทำนองเรียกคนรักให้กลับมา ส่วนเท้าก็ใช้ปลายตบพื้นตามจังหวะที่มือกวัก เหมือนกับที่ทำมาแล้ว แต่เป็นการทำสลับขวา-ซ้าย",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),

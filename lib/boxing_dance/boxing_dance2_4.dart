@@ -9,7 +9,7 @@ class boxing_dance2_4 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('4. ท่าน้าวเฮียวไผ่หรือน้าวเรียวไผ่'),
+        title: const Text('ท่าน้าวเฮียวไผ่หรือน้าวเรียวไผ่'),
       ),
       body: Center(
         child: SelectionArea(
@@ -58,9 +58,9 @@ class boxing_dance2_4 extends StatelessWidget {
                     ),
                   ),
                 ),
-                
               ],
             ),
+            const SizedBox(width: 16),
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 5),
               ),
@@ -118,7 +118,7 @@ class boxing_dance2_4 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_2_4.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -148,26 +148,36 @@ class boxing_dance2_4 extends StatelessWidget {
                           color: Colors.black,
                           fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่าน้าวเฮียวไผ่หรือน้าวเรียวไผ่ ผู้รำจะเบนขาที่ยกสูงให้เอียงมาอยู่อีกข้างหนึ่งปล่อยแขนที่วางไว้ให้หย่อนลงมาข้างๆขา พร้อมกับเหวี่ยงแขนที่อยู่ขั้นเอวให้โน้มน้าวขึ้นพ้นศีรษะมาตั้งศอกกำมือไว้ที่บั้นเอวตามเดิม ส่วนแขนข้างหน้าที่หย่อนลงให้งอข้อศอกขึ้น และตั้งไว้ที่ขาซึ่งไว้แล้ว เหยาะย่างย่อตัวให้ต่ำเตี้ย เอียงไหล่ลงตามจินตนาการยอดไผ่ที่ต้องลมยิ่มน้าวโน้มโอนเอนอ่อนช้อยย้อยต่ำลงมาฉันนั้น",
+                            style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่าน้าวเฮียวไผ่หรือน้าวเรียวไผ่ ผู้รำจะเบนขาที่ยกสูงให้เอียงมาอยู่อีกข้างหนึ่งปล่อยแขนที่วางไว้ให้หย่อนลงมาข้างๆขา พร้อมกับเหวี่ยงแขนที่อยู่ขั้นเอวให้โน้มน้าวขึ้นพ้นศีรษะมาตั้งศอกกำมือไว้ที่บั้นเอวตามเดิม ส่วนแขนข้างหน้าที่หย่อนลงให้งอข้อศอกขึ้น และตั้งไว้ที่ขาซึ่งไว้แล้ว เหยาะย่างย่อตัวให้ต่ำเตี้ย เอียงไหล่ลงตามจินตนาการยอดไผ่ที่ต้องลมยิ่มน้าวโน้มโอนเอนอ่อนช้อยย้อยต่ำลงมาฉันนั้น",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),

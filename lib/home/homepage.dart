@@ -30,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(width: 16), // Add some spacing between the buttons
+                // Add some spacing between the buttons
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
@@ -49,6 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
+                const SizedBox(width: 16),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
@@ -70,16 +71,45 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                
               ],
             ),
-            Container(
-                margin: const EdgeInsets.symmetric(vertical: 30),
-                child: Image.asset(
-                  "assets/imaghome.png",
-                  width: 400,
-                  height: 400,
-                )),
+            Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          const EdgeInsets.symmetric(vertical: 30);
+                          return Dialog(
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).pop();
+                              },
+                              child: SizedBox(
+                                width: double.infinity,
+                                child: Image.asset(
+                                  "assets/imaghome.png",
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                      );
+                    },
+                    child: Container(
+                      margin: const EdgeInsets.symmetric(vertical: 5),
+                      child: Image.asset(
+                        "assets/imaghome.png",
+                        width: 300, // Set the desired width for the image
+                        height: 300, // Set the desired height for the image
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             Container(
                 padding: const EdgeInsets.all(8.0),
                 child: const Text('ยินดีต้อนรับทุกท่าน',

@@ -49,6 +49,7 @@ class _bibliographyState extends State<bibliography> {
                         ),
                       ),
                     ),
+                    const SizedBox(width: 16),
                     Container(
                       margin: const EdgeInsets.symmetric(vertical: 5),
                       child: ElevatedButton.icon(

@@ -76,7 +76,7 @@ class MyDrawer extends StatelessWidget {
                 ),
                 children: [
                   ListTile(
-                    title: const Text('1. ท่าเสือออกจากเหล่า'),
+                    title: const Text('ท่าเสือออกจากเหล่า'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -86,7 +86,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('2. ท่าย่างสามขุม'),
+                    title: const Text('ท่าย่างสามขุม'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -96,7 +96,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('3. ท่ากุมภัณฑ์ถอยทัพ'),
+                    title: const Text('ท่ากุมภัณฑ์ถอยทัพ'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -106,7 +106,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('4. ท่าลับหอกโมกขศักดิ์'),
+                    title: const Text('ท่าลับหอกโมกขศักดิ์'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -116,7 +116,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('5. ท่าตบผาบปราบมาร'),
+                    title: const Text('ท่าตบผาบปราบมาร'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -126,7 +126,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('6. ท่าทะยานเหยื่อเสือลากหาง'),
+                    title: const Text('ท่าทะยานเหยื่อเสือลากหาง'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -136,7 +136,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('7. ท่าไก่เลียบเล้า'),
+                    title: const Text('ท่าไก่เลียบเล้า'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -146,7 +146,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('8. ท่าน้าวคันศร'),
+                    title: const Text('ท่าน้าวคันศร'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -156,7 +156,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('9. ท่ากินนรเข้าถ้ำ'),
+                    title: const Text('ท่ากินนรเข้าถ้ำ'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -166,7 +166,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('10. ท่าเตี้ยต่ำเสือหมอบ'),
+                    title: const Text('ท่าเตี้ยต่ำเสือหมอบ'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -176,7 +176,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('11. ท่าทรพีชนพ่อ'),
+                    title: const Text('ท่าทรพีชนพ่อ'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -186,7 +186,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('12. ท่าล่อแก้วเมขลา'),
+                    title: const Text('ท่าล่อแก้วเมขลา'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -196,7 +196,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('13. ท่าม้ากระทืบโรง'),
+                    title: const Text('ท่าม้ากระทืบโรง'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -206,7 +206,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('14. ท่าช้างโขลงทะลายป่า'),
+                    title: const Text('ท่าช้างโขลงทะลายป่า'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -225,7 +225,7 @@ class MyDrawer extends StatelessWidget {
                 ),
                 children: [
                   ListTile(
-                    title: const Text('1. ท่ากาเต้นก้อนขี้ไถ'),
+                    title: const Text('ท่ากาเต้นก้อนขี้ไถ'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -235,7 +235,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('2. ท่าหวะพราย'),
+                    title: const Text('ท่าหวะพราย'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -245,7 +245,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('3. ท่าย่างสามขุม'),
+                    title: const Text('ท่าย่างสามขุม'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -255,7 +255,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('4. ท่าน้าวเฮียวไผ่'),
+                    title: const Text('ท่าน้าวเฮียวไผ่'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -265,7 +265,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('5. ท่าไล่ลูกแตก-ตบผาบปราบมาร'),
+                    title: const Text('ท่าไล่ลูกแตก-ตบผาบปราบมาร'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -275,7 +275,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('6. ท่าช้างม้วนงวง'),
+                    title: const Text('ท่าช้างม้วนงวง'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -285,7 +285,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('7. ท่าทวงฮัก กวักชู้'),
+                    title: const Text('ท่าทวงฮัก กวักชู้'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -295,7 +295,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('8. ท่าแหลวถลา กาตากปีก'),
+                    title: const Text('ท่าแหลวถลา กาตากปีก'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -305,7 +305,7 @@ class MyDrawer extends StatelessWidget {
                     },
                   ),
                   ListTile(
-                    title: const Text('9. ท่าเลาะเลียบตูบ'),
+                    title: const Text('ท่าเลาะเลียบตูบ'),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -332,7 +332,8 @@ class MyDrawer extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const bibliography()),
+                    MaterialPageRoute(
+                        builder: (context) => const bibliography()),
                   );
                 },
               ),

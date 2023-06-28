@@ -9,7 +9,7 @@ class boxing_dance1_11 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('11. ท่าทรพีชนพ่อ'),
+        title: const Text('ท่าทรพีชนพ่อ'),
       ),
       body: Center(
         child: SelectionArea(
@@ -60,9 +60,7 @@ class boxing_dance1_11 extends StatelessWidget {
                 ),
               ],
             ),
-              Container(
-                margin: const EdgeInsets.symmetric(vertical: 5),
-              ),
+              const SizedBox(width: 16),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -117,7 +115,7 @@ class boxing_dance1_11 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_11.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -139,34 +137,37 @@ class boxing_dance1_11 extends StatelessWidget {
                   ),
                 ],
               ),
-              Container(
-                  padding: const EdgeInsets.all(5),
-                  child: const Text('วิธีปฏิบัติ',
-                      style: TextStyle(
-                          fontSize: 23,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่าทรพีชนพ่อ เป็นท่าที่ต่อเนื่องจากท่าเตี้ยต่ำเสือหมอบ มีลักษณะเด่น คือ ผู้แสดงจะตบพื้นอย่างแรง และใช้ศอกทั้งสองข้าง ที่กางออกขวิดลงที่พื้นไปมาอย่างรวดเร็ว",
+                            style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่าทรพีชนพ่อ เป็นท่าที่ต่อเนื่องจากท่าเตี้ยต่ำเสือหมอบ มีลักษณะเด่น คือ ผู้แสดงจะตบพื้นอย่างแรง และใช้ศอกทั้งสองข้าง ที่กางออกขวิดลงที่พื้นไปมาอย่างรวดเร็ว",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),

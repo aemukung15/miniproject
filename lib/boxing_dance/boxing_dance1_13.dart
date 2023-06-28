@@ -9,7 +9,7 @@ class boxing_dance1_13 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('13. ท่าม้ากระทืบโรง'),
+        title: const Text('ท่าม้ากระทืบโรง'),
       ),
       body: Center(
         child: SelectionArea(
@@ -37,6 +37,7 @@ class boxing_dance1_13 extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(width: 16),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
@@ -118,7 +119,7 @@ class boxing_dance1_13 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_13.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -140,34 +141,37 @@ class boxing_dance1_13 extends StatelessWidget {
                   ),
                 ],
               ),
-              Container(
-                  padding: const EdgeInsets.all(5),
-                  child: const Text('วิธีปฏิบัติ',
-                      style: TextStyle(
-                          fontSize: 23,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่าม้ากระทืบโรง มีลักษณะเด่น คือ ผู้แสดงจะทรงตัวค่อยๆ ลุกขึ้นยืน พร้อมกับม้วนแขนทั้งสองข้างไปมา ในลักษณะควงหมัดเป็นวงกลมหลาย ๆ รอบ พร้อมกับยกเท้าขึ้นและกระทืบลงกับพื้นอย่างแรงและหนักแน่นจำนวน 3 ครั้ง ",
+                            style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่าม้ากระทืบโรง มีลักษณะเด่น คือ ผู้แสดงจะทรงตัวค่อยๆ ลุกขึ้นยืน พร้อมกับม้วนแขนทั้งสองข้างไปมา ในลักษณะควงหมัดเป็นวงกลมหลาย ๆ รอบ พร้อมกับยกเท้าขึ้นและกระทืบลงกับพื้นอย่างแรงและหนักแน่นจำนวน 3 ครั้ง ",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),

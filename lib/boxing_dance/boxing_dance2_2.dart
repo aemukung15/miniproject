@@ -9,7 +9,7 @@ class boxing_dance2_2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('2. ท่าหวะพราย'),
+        title: const Text('ท่าหวะพราย'),
       ),
       body: Center(
         child: SelectionArea(
@@ -37,6 +37,7 @@ class boxing_dance2_2 extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(width: 16),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
@@ -118,7 +119,7 @@ class boxing_dance2_2 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_2_2.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -148,26 +149,36 @@ class boxing_dance2_2 extends StatelessWidget {
                           color: Colors.black,
                           fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่าหวะพราย ผู้รำจะโน้มตัวลงไปข้างหน้าพร้อมกับม้วนแขนทั้งสองข้างเข้ามาในสีข้าง แล้วยกแขนสูงขึ้นเหนือศีรษะ ตระหวัดปลายนิ้วมือไปข้างหน้า 3 ครั้ง เงยหน้าขึ้นมองดูมือ ส่วนเท้ายังเต้นอยู่ตามจังหวะในท่าที่หนึ่ง ทำอย่างนี้ไปจนรอบ เป็นการปัดเสนียดจัญไร ภูตพราย ผี ปีศาจและสิ่งไม่ดีไปให้พ้นจากตัว",
+                           style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่าหวะพราย ผู้รำจะโน้มตัวลงไปข้างหน้าพร้อมกับม้วนแขนทั้งสองข้างเข้ามาในสีข้าง แล้วยกแขนสูงขึ้นเหนือศีรษะ ตระหวัดปลายนิ้วมือไปข้างหน้า 3 ครั้ง เงยหน้าขึ้นมองดูมือ ส่วนเท้ายังเต้นอยู่ตามจังหวะในท่าที่หนึ่ง ทำอย่างนี้ไปจนรอบ เป็นการปัดเสนียดจัญไร ภูตพราย ผี ปีศาจและสิ่งไม่ดีไปให้พ้นจากตัว",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),

@@ -9,7 +9,7 @@ class boxing_dance1_12 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('12. ท่าล่อแก้วเมกขลา'),
+        title: const Text('ท่าล่อแก้วเมกขลา'),
       ),
       body: Center(
         child: SelectionArea(
@@ -37,6 +37,7 @@ class boxing_dance1_12 extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(width: 16),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
@@ -118,7 +119,7 @@ class boxing_dance1_12 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_12.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -148,26 +149,36 @@ class boxing_dance1_12 extends StatelessWidget {
                           color: Colors.black,
                           fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่าล่อแก้วเมกขลา มีลักษณะเด่น คือ ผู้แสดงจะยื่นเท้า ที่อยู่ข้างหลังไปข้างหน้า และโน้มตัวมาข้างหลัง พร้อมกับกางแขนทั้งสองข้าง แล้วเหยียดตรงไปข้างหน้าและข้างหลังในระดับ 45 องศา ปลายมือกวัดแกว่งในท่ารำ และม้วนแขนทั้งสองข้าง เข้ามาบริเวณหน้าอก โน้มตัวไปข้างหน้า แล้ววาดแขนกางเหยียดออกไปเป็นท่าเดิม โดยจะทำอยู่ 2 – 3 ครั้ง",
+                            style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่าล่อแก้วเมกขลา มีลักษณะเด่น คือ ผู้แสดงจะยื่นเท้า ที่อยู่ข้างหลังไปข้างหน้า และโน้มตัวมาข้างหลัง พร้อมกับกางแขนทั้งสองข้าง แล้วเหยียดตรงไปข้างหน้าและข้างหลังในระดับ 45 องศา ปลายมือกวัดแกว่งในท่ารำ และม้วนแขนทั้งสองข้าง เข้ามาบริเวณหน้าอก โน้มตัวไปข้างหน้า แล้ววาดแขนกางเหยียดออกไปเป็นท่าเดิม โดยจะทำอยู่ 2 – 3 ครั้ง",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),

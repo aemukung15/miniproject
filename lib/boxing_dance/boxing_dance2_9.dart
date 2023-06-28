@@ -9,7 +9,7 @@ class boxing_dance2_9 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('9. ท่าเลาะเลียบตูบ'),
+        title: const Text('ท่าเลาะเลียบตูบ'),
       ),
       body: Center(
         child: SelectionArea(
@@ -37,6 +37,7 @@ class boxing_dance2_9 extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(width: 16),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
@@ -58,12 +59,9 @@ class boxing_dance2_9 extends StatelessWidget {
                     ),
                   ),
                 ),
-                
               ],
             ),
-              Container(
-                margin: const EdgeInsets.symmetric(vertical: 5),
-              ),
+              const SizedBox(width: 16),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -118,7 +116,7 @@ class boxing_dance2_9 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_2_9.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -148,26 +146,36 @@ class boxing_dance2_9 extends StatelessWidget {
                           color: Colors.black,
                           fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่าเลาะเลียบตูบ ผู้รำจะวาดแขนข้างหนึ่งไปข้างหน้าแบบตักช้อยปลาหงายฝ่ามือ ค่อยๆ ยกขึ้นจนได้ระดับไหล่จึงพลิกข้อมือเป็นคว่ำ แล้วสลัดปลายนี้วขึ้นเหนือศีรษะ 3 ครั้ง ลำตัวโน้มไปข้างหน้าตามแขนที่ยื่นไป ส่วนมืออีกข้างหนึ่งเหยียดตรงมาข้างหลัง หงายฝ่ามือและสลัดปลายนี้วอย่างเดียวกัน ทำอย่างนี้สลับกัน เปลี่ยนเป็นข้างซ้ายข้างขวา ส่วนเท้าทั้งสองข้างเต้นตามจังหวะการเต้นก้อนไถในแบบท่าที่ 1",
+                            style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่าเลาะเลียบตูบ ผู้รำจะวาดแขนข้างหนึ่งไปข้างหน้าแบบตักช้อยปลาหงายฝ่ามือ ค่อยๆ ยกขึ้นจนได้ระดับไหล่จึงพลิกข้อมือเป็นคว่ำ แล้วสลัดปลายนี้วขึ้นเหนือศีรษะ 3 ครั้ง ลำตัวโน้มไปข้างหน้าตามแขนที่ยื่นไป ส่วนมืออีกข้างหนึ่งเหยียดตรงมาข้างหลัง หงายฝ่ามือและสลัดปลายนี้วอย่างเดียวกัน ทำอย่างนี้สลับกัน เปลี่ยนเป็นข้างซ้ายข้างขวา ส่วนเท้าทั้งสองข้างเต้นตามจังหวะการเต้นก้อนไถในแบบท่าที่ 1",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),

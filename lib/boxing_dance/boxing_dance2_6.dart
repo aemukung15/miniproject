@@ -9,7 +9,7 @@ class boxing_dance2_6 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('6. ท่าช้างม้วนงวง'),
+        title: const Text('ท่าช้างม้วนงวง'),
       ),
       body: Center(
         child: SelectionArea(
@@ -37,6 +37,7 @@ class boxing_dance2_6 extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(width: 16),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
@@ -58,7 +59,6 @@ class boxing_dance2_6 extends StatelessWidget {
                     ),
                   ),
                 ),
-                
               ],
             ),
               Container(
@@ -118,7 +118,7 @@ class boxing_dance2_6 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_2_6.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -148,26 +148,36 @@ class boxing_dance2_6 extends StatelessWidget {
                           color: Colors.black,
                           fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่าช้างม้วนงวง ผู้รำจะยกขายืนชิดติดกันแล้วยกเข่าไปข้างหน้าให้สูงระดับเอวม้วนท่อนแขนช่วงล่างทั้งสองแขน หมุนลักษณะควงหมัดกลมหลายๆรอบ อยู่เหนือขาที่ยกไว้ พร้อมกับก้าวขาสืบเท้าไปข้างหน้า 3 ก้าว หยุดยืนยกขาข้างหนึ่งมาข้างหลังงอเข่าให้สูงขึ้นพร้อมกับเหวี่ยงแขนทั้งสองออกจนสุดแขน โน้มตัวไปข้างหน้าย่อเข่าลงเล็กน้อย แล้วม้วนแขนทั้งสองข้างหมุนควงหมัดวงกลมและก้าวขาสืบเท้าไปข้างหน้า 3 ก้าว เหมือนครั้งก่อนไปจนรอบ",
+                            style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่าช้างม้วนงวง ผู้รำจะยกขายืนชิดติดกันแล้วยกเข่าไปข้างหน้าให้สูงระดับเอวม้วนท่อนแขนช่วงล่างทั้งสองแขน หมุนลักษณะควงหมัดกลมหลายๆรอบ อยู่เหนือขาที่ยกไว้ พร้อมกับก้าวขาสืบเท้าไปข้างหน้า 3 ก้าว หยุดยืนยกขาข้างหนึ่งมาข้างหลังงอเข่าให้สูงขึ้นพร้อมกับเหวี่ยงแขนทั้งสองออกจนสุดแขน โน้มตัวไปข้างหน้าย่อเข่าลงเล็กน้อย แล้วม้วนแขนทั้งสองข้างหมุนควงหมัดวงกลมและก้าวขาสืบเท้าไปข้างหน้า 3 ก้าว เหมือนครั้งก่อนไปจนรอบ",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),

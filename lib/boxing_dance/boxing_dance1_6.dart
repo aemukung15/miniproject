@@ -9,7 +9,7 @@ class boxing_dance1_6 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('6. ท่าทะยานเหยื่อ'),
+        title: const Text('ท่าทะยานเหยื่อ'),
       ),
       body: Center(
         child: SelectionArea(
@@ -37,6 +37,7 @@ class boxing_dance1_6 extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(width: 16),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
@@ -79,7 +80,7 @@ class boxing_dance1_6 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_6.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -109,26 +110,36 @@ class boxing_dance1_6 extends StatelessWidget {
                           color: Colors.black,
                           fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่าทะยานเหยื่อ เสือลากหาง กวางเหลียวหลัง มีลักษณะเด่น คือ เป็นท่าโดยต่อจากท่าตบผาบปราบมาร ครั้นจบท่าจะเต้น ออกไปข้าง ๆ มือทั้งสองตบยอดอก และยกขาข้างหนึ่งขึ้นให้สูง พองาม แล้วใช้หลังมือข้างที่ขายกนี้ ตีขาในที่ยกไว้แล้ว และใช้เท้าข้างที่ใช้ยืนโดดเตะฝ่ามือที่ยื่นไปข้างหน้าในระดับสูง พร้อมกับกระโดดขึ้นตบมือทั้งสองข้างเหนือศีรษะ เรียกว่า “เสือทะยานเหยื่อ” แล้วต่อมาผู้แสดงจะเอี้ยวตัวมาตบฝ่าเท้า ที่อยู่คนละข้างกับมือ ซึ่งได้ยกฝ่าเท้ารอรับอยู่ แล้วลากเท้าที่ถูกตบ ให้ยื่นออกไปและกระทุ้งปลายเท้ากับพื้นเบา ๆ ตามจังหวะดนตรี ส่วนแขนทั้งสองข้างก็กางออก เรียกว่า “เสือลากหาง” ต่อไปผู้รำจะเอี้ยวตัวหันมาในแนวเดียวกับเท้าที่ตบลากหางเสืออยู่ และแขน ทั้งสองก็มารวมกัน เหยียดยื่นออกไปคู่ขนานกับเท้าที่ตบพื้นอยู่ หันหน้าแลเหลียวตามแขนที่เหยียดอยู่ เรียกว่า “กวางเหลียวหลัง",
+                            style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่าทะยานเหยื่อ เสือลากหาง กวางเหลียวหลัง มีลักษณะเด่น คือ เป็นท่าโดยต่อจากท่าตบผาบปราบมาร ครั้นจบท่าจะเต้น ออกไปข้าง ๆ มือทั้งสองตบยอดอก และยกขาข้างหนึ่งขึ้นให้สูง พองาม แล้วใช้หลังมือข้างที่ขายกนี้ ตีขาในที่ยกไว้แล้ว และใช้เท้าข้างที่ใช้ยืนโดดเตะฝ่ามือที่ยื่นไปข้างหน้าในระดับสูง พร้อมกับกระโดดขึ้นตบมือทั้งสองข้างเหนือศีรษะ เรียกว่า “เสือทะยานเหยื่อ” แล้วต่อมาผู้แสดงจะเอี้ยวตัวมาตบฝ่าเท้า ที่อยู่คนละข้างกับมือ ซึ่งได้ยกฝ่าเท้ารอรับอยู่ แล้วลากเท้าที่ถูกตบ ให้ยื่นออกไปและกระทุ้งปลายเท้ากับพื้นเบา ๆ ตามจังหวะดนตรี ส่วนแขนทั้งสองข้างก็กางออก เรียกว่า “เสือลากหาง” ต่อไปผู้รำจะเอี้ยวตัวหันมาในแนวเดียวกับเท้าที่ตบลากหางเสืออยู่ และแขน ทั้งสองก็มารวมกัน เหยียดยื่นออกไปคู่ขนานกับเท้าที่ตบพื้นอยู่ หันหน้าแลเหลียวตามแขนที่เหยียดอยู่ เรียกว่า “กวางเหลียวหลัง",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),

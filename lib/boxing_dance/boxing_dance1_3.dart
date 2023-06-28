@@ -9,7 +9,7 @@ class boxing_dance1_3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('3. ท่ากุมภัณฑ์ถอยทัพ'),
+        title: const Text('ท่ากุมภัณฑ์ถอยทัพ'),
       ),
       body: Center(
         child: SelectionArea(
@@ -37,6 +37,7 @@ class boxing_dance1_3 extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(width: 16),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                   child: ElevatedButton.icon(
@@ -80,7 +81,7 @@ class boxing_dance1_3 extends StatelessWidget {
                               child: SizedBox(
                                 width: double.infinity,
                                 child: Image.asset(
-                                  "assets/3.png",
+                                  "assets/.png",
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -118,7 +119,7 @@ class boxing_dance1_3 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/m2.gif",
+                                    "assets/mgif_3.gif",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -148,26 +149,36 @@ class boxing_dance1_3 extends StatelessWidget {
                           color: Colors.black,
                           fontWeight: FontWeight.bold))),
               Expanded(
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: SingleChildScrollView(
-                child: Padding(
-                  padding: const EdgeInsets.all(8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
-                      SizedBox(
-                        height: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const <Widget>[
+                          SizedBox(height: 5),
+                          Text(
+                            "ท่ากุมภัณฑ์ถอยทัพ มีลักษณะเด่น คือ การแสดงลีลาท่าทางถอยไปข้างหลัง โดยก้าวขาที่ยกสูงระดับเอวอยู่นั้นไปข้างหน้า พร้อมกับยกมือที่ตั้งอยู่ที่ขา ให้สูงและเหวี่ยงข้ามศีรษะไปตั้งไว้ ที่บั้นเอว กำมือให้แน่น ส่วนมืออีกข้างหนึ่ง ตระหวัดลงข้างล่าง ม้วนแขนขึ้นมาให้ตั้งไว้ที่เข่า ซึ่งยกขายื่นไปข้างหน้ารออยู่แล้ว ให้ทำหน้าตากลอกหลอกล่อ โดยใช้ขายังยืนทรงตัวอยู่ข้างเดียว เมื่อได้จังหวะดนตรีผู้แสดงก็จะเปลี่ยนข้าง ในลักษณะถอยไปข้างหลังอย่างเดิมจนรู้สึกว่าถอยมาอยู่กลางเวที พอที่จะแสดงรำท่าต่อไปได้สะดวก เป็นการถอยมาเพื่อตั้งหลักเพื่อเข้าสู่ท่าลับหอกโมกขศักดิ์ต่อไป",
+                            style: TextStyle(
+                              fontFamily: 'TH SarabunPSK',
+                              fontSize: 20,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                        ],
                       ),
-                      Text(
-                        "ท่ากุมภัณฑ์ถอยทัพ มีลักษณะเด่น คือ การแสดงลีลาท่าทางถอยไปข้างหลัง โดยก้าวขาที่ยกสูงระดับเอวอยู่นั้นไปข้างหน้า พร้อมกับยกมือที่ตั้งอยู่ที่ขา ให้สูงและเหวี่ยงข้ามศีรษะไปตั้งไว้ ที่บั้นเอว กำมือให้แน่น ส่วนมืออีกข้างหนึ่ง ตระหวัดลงข้างล่าง ม้วนแขนขึ้นมาให้ตั้งไว้ที่เข่า ซึ่งยกขายื่นไปข้างหน้ารออยู่แล้ว ให้ทำหน้าตากลอกหลอกล่อ โดยใช้ขายังยืนทรงตัวอยู่ข้างเดียว เมื่อได้จังหวะดนตรีผู้แสดงก็จะเปลี่ยนข้าง ในลักษณะถอยไปข้างหลังอย่างเดิมจนรู้สึกว่าถอยมาอยู่กลางเวที พอที่จะแสดงรำท่าต่อไปได้สะดวก เป็นการถอยมาเพื่อตั้งหลักเพื่อเข้าสู่ท่าลับหอกโมกขศักดิ์ต่อไป",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ))
+              )
             ],
           ),
         ),
