@@ -16,50 +16,52 @@ class boxing_dance2_7 extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const SizedBox(width: 16), // Add some spacing between the buttons
-                Container(
-                  margin: const EdgeInsets.symmetric(vertical: 5),
-                  child: ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    icon: const Icon(Icons.arrow_back),
-                    label: const Text("ย้อนกลับ"),
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.all(20.0),
-                      fixedSize: const Size(150, 60),
-                      textStyle: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(
+                      width: 16), // Add some spacing between the buttons
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 5),
+                    child: ElevatedButton.icon(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      icon: const Icon(Icons.arrow_back),
+                      label: const Text("ย้อนกลับ"),
+                      style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.all(20.0),
+                        fixedSize: const Size(150, 60),
+                        textStyle: const TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
-                ),
-                Container(
-                  margin: const EdgeInsets.symmetric(vertical: 5),
-                  child: ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const manual()),
-                      );
-                    },
-                    icon: const Icon(Icons.book),
-                    label: const Text("คู่มือ"),
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.all(20.0),
-                      fixedSize: const Size(150, 60),
-                      textStyle: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 5),
+                    child: ElevatedButton.icon(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const manual()),
+                        );
+                      },
+                      icon: const Icon(Icons.book),
+                      label: const Text("คู่มือ"),
+                      style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.all(20.0),
+                        fixedSize: const Size(150, 60),
+                        textStyle: const TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
-            ),
+                ],
+              ),
               const SizedBox(width: 16),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -148,28 +150,31 @@ class boxing_dance2_7 extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.all(5),
                   decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 201, 178, 178),
                     border: Border.all(
                       color: Colors.black,
                       width: 1,
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: SingleChildScrollView(
-                    child: Padding(
-                      padding: const EdgeInsets.all(8),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const <Widget>[
-                          SizedBox(height: 5),
-                          Text(
-                            "ท่าทวงฮัก กวักชู้ รำจะเต้นไปข้างหน้าสามก้าว ในรูปทะแยงมุมแบบลายฟันปลา พร้อมกับแขนทั้งสองข้างบนตีสีข้างให้ดัง คล้ายไก่ตีปีก ตามจังหวะเท้าที่ที่เต้นไป แล้วเอี้ยวตัวส่งแขนทั้งสองยื่นไปข้างหน้า ให้ขนานกับพื้น แบมือทั้งสองกวักไปข้างหน้าตามจังหวะดนตรี ส่วนขาที่อยู่ข้างหน้ายืนเป็นหลักย่อเข่าลงเล็กน้อย อีกขาหนึ่งไขว้หลังยื่นไปข้างหน้าใช้ปลายเท้าตบพื้นเป็นจังหวะเข้ากับมือที่กวักอยู่ประมาณ 3 ครั้ง ต่อไปก็ให้เต้นไปข้างหน้าสามก้าว แขนทั้งสองตีปีกและยื่นไปข้างหน้า ทำนองเรียกคนรักให้กลับมา ส่วนเท้าก็ใช้ปลายตบพื้นตามจังหวะที่มือกวัก เหมือนกับที่ทำมาแล้ว แต่เป็นการทำสลับขวา-ซ้าย",
-                            style: TextStyle(
-                              fontFamily: 'TH SarabunPSK',
-                              fontSize: 20,
+                  child: Scrollbar(
+                    child: SingleChildScrollView(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const <Widget>[
+                            SizedBox(height: 5),
+                            Text(
+                              "ท่าทวงฮัก กวักชู้ รำจะเต้นไปข้างหน้าสามก้าว ในรูปทะแยงมุมแบบลายฟันปลา พร้อมกับแขนทั้งสองข้างบนตีสีข้างให้ดัง คล้ายไก่ตีปีก ตามจังหวะเท้าที่ที่เต้นไป แล้วเอี้ยวตัวส่งแขนทั้งสองยื่นไปข้างหน้า ให้ขนานกับพื้น แบมือทั้งสองกวักไปข้างหน้าตามจังหวะดนตรี ส่วนขาที่อยู่ข้างหน้ายืนเป็นหลักย่อเข่าลงเล็กน้อย อีกขาหนึ่งไขว้หลังยื่นไปข้างหน้าใช้ปลายเท้าตบพื้นเป็นจังหวะเข้ากับมือที่กวักอยู่ประมาณ 3 ครั้ง ต่อไปก็ให้เต้นไปข้างหน้าสามก้าว แขนทั้งสองตีปีกและยื่นไปข้างหน้า ทำนองเรียกคนรักให้กลับมา ส่วนเท้าก็ใช้ปลายตบพื้นตามจังหวะที่มือกวัก เหมือนกับที่ทำมาแล้ว แต่เป็นการทำสลับขวา-ซ้าย",
+                              style: TextStyle(
+                                fontFamily: 'TH SarabunPSK',
+                                fontSize: 20,
+                              ),
                             ),
-                          ),
-                          SizedBox(height: 5),
-                        ],
+                            SizedBox(height: 5),
+                          ],
+                        ),
                       ),
                     ),
                   ),

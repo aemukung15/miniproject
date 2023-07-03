@@ -16,52 +16,53 @@ class boxing_dance1_13 extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const SizedBox(width: 16), // Add some spacing between the buttons
-                Container(
-                  margin: const EdgeInsets.symmetric(vertical: 5),
-                  child: ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    icon: const Icon(Icons.arrow_back),
-                    label: const Text("ย้อนกลับ"),
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.all(20.0),
-                      fixedSize: const Size(150, 60),
-                      textStyle: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(
+                      width: 16), // Add some spacing between the buttons
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 5),
+                    child: ElevatedButton.icon(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      icon: const Icon(Icons.arrow_back),
+                      label: const Text("ย้อนกลับ"),
+                      style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.all(20.0),
+                        fixedSize: const Size(150, 60),
+                        textStyle: const TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
-                ),
-                const SizedBox(width: 16),
-                Container(
-                  margin: const EdgeInsets.symmetric(vertical: 5),
-                  child: ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const manual()),
-                      );
-                    },
-                    icon: const Icon(Icons.book),
-                    label: const Text("คู่มือ"),
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.all(20.0),
-                      fixedSize: const Size(150, 60),
-                      textStyle: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
+                  const SizedBox(width: 16),
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 5),
+                    child: ElevatedButton.icon(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const manual()),
+                        );
+                      },
+                      icon: const Icon(Icons.book),
+                      label: const Text("คู่มือ"),
+                      style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.all(20.0),
+                        fixedSize: const Size(150, 60),
+                        textStyle: const TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
-                ),
-                
-              ],
-            ),
+                ],
+              ),
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 5),
               ),
@@ -145,28 +146,31 @@ class boxing_dance1_13 extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.all(5),
                   decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 201, 178, 178),
                     border: Border.all(
                       color: Colors.black,
                       width: 1,
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: SingleChildScrollView(
-                    child: Padding(
-                      padding: const EdgeInsets.all(8),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const <Widget>[
-                          SizedBox(height: 5),
-                          Text(
-                            "ท่าม้ากระทืบโรง มีลักษณะเด่น คือ ผู้แสดงจะทรงตัวค่อยๆ ลุกขึ้นยืน พร้อมกับม้วนแขนทั้งสองข้างไปมา ในลักษณะควงหมัดเป็นวงกลมหลาย ๆ รอบ พร้อมกับยกเท้าขึ้นและกระทืบลงกับพื้นอย่างแรงและหนักแน่นจำนวน 3 ครั้ง ",
-                            style: TextStyle(
-                              fontFamily: 'TH SarabunPSK',
-                              fontSize: 20,
+                  child: Scrollbar(
+                    child: SingleChildScrollView(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const <Widget>[
+                            SizedBox(height: 5),
+                            Text(
+                              "ท่าม้ากระทืบโรง มีลักษณะเด่น คือ ผู้แสดงจะทรงตัวค่อยๆ ลุกขึ้นยืน พร้อมกับม้วนแขนทั้งสองข้างไปมา ในลักษณะควงหมัดเป็นวงกลมหลาย ๆ รอบ พร้อมกับยกเท้าขึ้นและกระทืบลงกับพื้นอย่างแรงและหนักแน่นจำนวน 3 ครั้ง ",
+                              style: TextStyle(
+                                fontFamily: 'TH SarabunPSK',
+                                fontSize: 20,
+                              ),
                             ),
-                          ),
-                          SizedBox(height: 5),
-                        ],
+                            SizedBox(height: 5),
+                          ],
+                        ),
                       ),
                     ),
                   ),

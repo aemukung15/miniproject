@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:miniproject/boxing_dance/boxing_dance1_1.dart';
 import 'package:miniproject/boxing_dance/boxing_dance1_10.dart';
 import 'package:miniproject/boxing_dance/boxing_dance1_11.dart';
 import 'package:miniproject/boxing_dance/boxing_dance1_12.dart';
@@ -26,6 +25,8 @@ import 'package:miniproject/boxing_dance/developer.dart';
 import 'package:miniproject/boxing_dance/record.dart';
 import 'package:miniproject/home/homepage.dart';
 import 'package:miniproject/lib/bibliography.dart';
+import 'boxing_dance/boxing_dance1_1.dart';
+
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -328,7 +329,7 @@ class MyDrawer extends StatelessWidget {
               ),
               ListTile(
                 leading: const Icon(Icons.person_search),
-                title: const Text("บรรณานุกรม"),
+                title: const Text("อ้างอิงข้อมูล"),
                 onTap: () {
                   Navigator.push(
                     context,

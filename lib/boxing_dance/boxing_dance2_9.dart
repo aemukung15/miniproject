@@ -16,51 +16,53 @@ class boxing_dance2_9 extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const SizedBox(width: 16), // Add some spacing between the buttons
-                Container(
-                  margin: const EdgeInsets.symmetric(vertical: 5),
-                  child: ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    icon: const Icon(Icons.arrow_back),
-                    label: const Text("ย้อนกลับ"),
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.all(20.0),
-                      fixedSize: const Size(150, 60),
-                      textStyle: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(
+                      width: 16), // Add some spacing between the buttons
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 5),
+                    child: ElevatedButton.icon(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      icon: const Icon(Icons.arrow_back),
+                      label: const Text("ย้อนกลับ"),
+                      style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.all(20.0),
+                        fixedSize: const Size(150, 60),
+                        textStyle: const TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
-                ),
-                const SizedBox(width: 16),
-                Container(
-                  margin: const EdgeInsets.symmetric(vertical: 5),
-                  child: ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const manual()),
-                      );
-                    },
-                    icon: const Icon(Icons.book),
-                    label: const Text("คู่มือ"),
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.all(20.0),
-                      fixedSize: const Size(150, 60),
-                      textStyle: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
+                  const SizedBox(width: 16),
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 5),
+                    child: ElevatedButton.icon(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const manual()),
+                        );
+                      },
+                      icon: const Icon(Icons.book),
+                      label: const Text("คู่มือ"),
+                      style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.all(20.0),
+                        fixedSize: const Size(150, 60),
+                        textStyle: const TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
-            ),
+                ],
+              ),
               const SizedBox(width: 16),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -149,28 +151,31 @@ class boxing_dance2_9 extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.all(5),
                   decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 201, 178, 178),
                     border: Border.all(
                       color: Colors.black,
                       width: 1,
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: SingleChildScrollView(
-                    child: Padding(
-                      padding: const EdgeInsets.all(8),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const <Widget>[
-                          SizedBox(height: 5),
-                          Text(
-                            "ท่าเลาะเลียบตูบ ผู้รำจะวาดแขนข้างหนึ่งไปข้างหน้าแบบตักช้อยปลาหงายฝ่ามือ ค่อยๆ ยกขึ้นจนได้ระดับไหล่จึงพลิกข้อมือเป็นคว่ำ แล้วสลัดปลายนี้วขึ้นเหนือศีรษะ 3 ครั้ง ลำตัวโน้มไปข้างหน้าตามแขนที่ยื่นไป ส่วนมืออีกข้างหนึ่งเหยียดตรงมาข้างหลัง หงายฝ่ามือและสลัดปลายนี้วอย่างเดียวกัน ทำอย่างนี้สลับกัน เปลี่ยนเป็นข้างซ้ายข้างขวา ส่วนเท้าทั้งสองข้างเต้นตามจังหวะการเต้นก้อนไถในแบบท่าที่ 1",
-                            style: TextStyle(
-                              fontFamily: 'TH SarabunPSK',
-                              fontSize: 20,
+                  child: Scrollbar(
+                    child: SingleChildScrollView(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const <Widget>[
+                            SizedBox(height: 5),
+                            Text(
+                              "ท่าเลาะเลียบตูบ ผู้รำจะวาดแขนข้างหนึ่งไปข้างหน้าแบบตักช้อยปลาหงายฝ่ามือ ค่อยๆ ยกขึ้นจนได้ระดับไหล่จึงพลิกข้อมือเป็นคว่ำ แล้วสลัดปลายนี้วขึ้นเหนือศีรษะ 3 ครั้ง ลำตัวโน้มไปข้างหน้าตามแขนที่ยื่นไป ส่วนมืออีกข้างหนึ่งเหยียดตรงมาข้างหลัง หงายฝ่ามือและสลัดปลายนี้วอย่างเดียวกัน ทำอย่างนี้สลับกัน เปลี่ยนเป็นข้างซ้ายข้างขวา ส่วนเท้าทั้งสองข้างเต้นตามจังหวะการเต้นก้อนไถในแบบท่าที่ 1",
+                              style: TextStyle(
+                                fontFamily: 'TH SarabunPSK',
+                                fontSize: 20,
+                              ),
                             ),
-                          ),
-                          SizedBox(height: 5),
-                        ],
+                            SizedBox(height: 5),
+                          ],
+                        ),
                       ),
                     ),
                   ),

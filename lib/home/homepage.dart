@@ -24,110 +24,123 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SingleChildScrollView(
         child: Center(
-            child: SelectionArea(
-                child: Column(
-          children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                // Add some spacing between the buttons
-                Container(
-                  margin: const EdgeInsets.symmetric(vertical: 5),
-                  child: ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    icon: const Icon(Icons.arrow_back),
-                    label: const Text("ย้อนกลับ"),
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.all(20.0),
-                      fixedSize: const Size(150, 60),
-                      textStyle: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
+          child: SelectionArea(
+            child: Column(
+              children: <Widget>[
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    // Add some spacing between the buttons
+                    Container(
+                      margin: const EdgeInsets.symmetric(vertical: 5),
+                      child: ElevatedButton.icon(
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        icon: const Icon(Icons.arrow_back),
+                        label: const Text("ย้อนกลับ"),
+                        style: ElevatedButton.styleFrom(
+                          padding: const EdgeInsets.all(20.0),
+                          fixedSize: const Size(150, 60),
+                          textStyle: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
+                    ),
+                    const SizedBox(width: 16),
+                    Container(
+                      margin: const EdgeInsets.symmetric(vertical: 5),
+                      child: ElevatedButton.icon(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const manual()),
+                          );
+                        },
+                        icon: const Icon(Icons.book),
+                        label: const Text("คู่มือ"),
+                        style: ElevatedButton.styleFrom(
+                          padding: const EdgeInsets.all(20.0),
+                          fixedSize: const Size(150, 60),
+                          textStyle: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            const EdgeInsets.symmetric(vertical: 30);
+                            return Dialog(
+                              child: GestureDetector(
+                                onTap: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: SizedBox(
+                                  width: double.infinity,
+                                  child: Image.asset(
+                                    "assets/imaghome.png",
+                                    fit: BoxFit.contain,
+                                  ),
+                                ),
+                              ),
+                            );
+                          },
+                        );
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.symmetric(vertical: 5),
+                        child: Image.asset(
+                          "assets/imaghome.png",
+                          width: 300, // Set the desired width for the image
+                          height: 300, // Set the desired height for the image
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Container(
+                  padding: const EdgeInsets.all(8.0),
+                  child: const Text(
+                    'ยินดีต้อนรับทุกท่าน',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: 'TH SarabunPSK',
+                      fontSize: 40,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
-                const SizedBox(width: 16),
                 Container(
-                  margin: const EdgeInsets.symmetric(vertical: 5),
-                  child: ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const manual()),
-                      );
-                    },
-                    icon: const Icon(Icons.book),
-                    label: const Text("คู่มือ"),
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.all(20.0),
-                      fixedSize: const Size(150, 60),
-                      textStyle: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                      ),
+                  padding: const EdgeInsets.all(8.0),
+                  child: const Text(
+                    'แอปพลเคชัน',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: 'TH SarabunPSK',
+                      fontSize: 40,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
               ],
             ),
-            Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      showDialog(
-                        context: context,
-                        builder: (BuildContext context) {
-                          const EdgeInsets.symmetric(vertical: 30);
-                          return Dialog(
-                            child: GestureDetector(
-                              onTap: () {
-                                Navigator.of(context).pop();
-                              },
-                              child: SizedBox(
-                                width: double.infinity,
-                                child: Image.asset(
-                                  "assets/imaghome.png",
-                                  fit: BoxFit.contain,
-                                ),
-                              ),
-                            ),
-                          );
-                        },
-                      );
-                    },
-                    child: Container(
-                      margin: const EdgeInsets.symmetric(vertical: 5),
-                      child: Image.asset(
-                        "assets/imaghome.png",
-                        width: 300, // Set the desired width for the image
-                        height: 300, // Set the desired height for the image
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            Container(
-                padding: const EdgeInsets.all(8.0),
-                child: const Text('ยินดีต้อนรับทุกท่าน',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 40,
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold))),
-            Container(
-                padding: const EdgeInsets.all(8.0),
-                child: const Text('แอปพลเคชัน ',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 40,
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold))),
-          ],
-        ))),
+          ),
+        ),
       ),
       drawer: const MyDrawer(),
     );
