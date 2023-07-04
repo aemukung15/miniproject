@@ -27,7 +27,6 @@ import 'package:miniproject/home/homepage.dart';
 import 'package:miniproject/lib/bibliography.dart';
 import 'boxing_dance/boxing_dance1_1.dart';
 
-
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
 
@@ -38,14 +37,24 @@ class MyDrawer extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              const DrawerHeader(
-                child: Text(
-                  'เมนู',
-                  style: TextStyle(fontSize: 50),
-                  textAlign: TextAlign.center,
-                  selectionColor: Colors.brown,
+              DrawerHeader(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Icon(
+                      Icons.menu_book, // Replace with the desired icon
+                      size: 150,
+                      color: Colors.brown, // Change the icon color to your desired color
+                    ),
+                  ],
                 ),
               ),
+              const Text(
+                      'เมนู',
+                      style: TextStyle(fontSize: 30),
+                      textAlign: TextAlign.center,
+                      selectionColor: Colors.brown,
+                    ),
               ListTile(
                 leading: const Icon(Icons.home),
                 title: const Text("หน้าแรก"),

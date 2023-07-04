@@ -14,6 +14,7 @@ class bibliography extends StatelessWidget {
           'บรรณานุกรม',
           textAlign: TextAlign.center,
         ),
+        centerTitle: true,
       ),
       body: Scrollbar(
         child: SingleChildScrollView(

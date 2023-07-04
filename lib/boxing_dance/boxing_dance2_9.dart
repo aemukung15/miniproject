@@ -9,7 +9,9 @@ class boxing_dance2_9 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ท่าเลาะเลียบตูบ'),
+        title: const Text('ท่าเลาะเลียบตูบ'
+        ),
+        centerTitle: true,
       ),
       body: Center(
         child: SelectionArea(
@@ -151,7 +153,7 @@ class boxing_dance2_9 extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.all(5),
                   decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 201, 178, 178),
+                    color: const Color.fromARGB(255, 255, 255, 255),
                     border: Border.all(
                       color: Colors.black,
                       width: 1,

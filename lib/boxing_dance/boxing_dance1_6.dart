@@ -9,7 +9,9 @@ class boxing_dance1_6 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ท่าทะยานเหยื่อ'),
+        title: const Text('ท่าทะยานเหยื่อ'
+        ),
+        centerTitle: true,
       ),
       body: Center(
         child: SelectionArea(
@@ -58,6 +60,43 @@ class boxing_dance1_6 extends StatelessWidget {
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
                         ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(width: 16),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return Dialog(
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).pop();
+                              },
+                              child: SizedBox(
+                                width: double.infinity,
+                                child: Image.asset(
+                                  "assets/6.png",
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                      );
+                    },
+                    child: Container(
+                      margin: const EdgeInsets.symmetric(vertical: 5),
+                      child: Image.asset(
+                        "assets/6.png",
+                        width: 300, // Set the desired width for the image
+                        height: 300, // Set the desired height for the image
                       ),
                     ),
                   ),
@@ -114,7 +153,7 @@ class boxing_dance1_6 extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.all(5),
                   decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 201, 178, 178),
+                    color: const Color.fromARGB(255, 255, 255, 255),
                     border: Border.all(
                       color: Colors.black,
                       width: 1,
