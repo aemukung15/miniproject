@@ -9,7 +9,12 @@ class boxing_dance2_9 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ท่าเลาะเลียบตูบ'
+        title: const Text(
+          'ท่าเลาะเลียบตูบ',
+          style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),
         ),
         centerTitle: true,
       ),
@@ -143,12 +148,15 @@ class boxing_dance2_9 extends StatelessWidget {
                 ],
               ),
               Container(
-                  padding: const EdgeInsets.all(5),
-                  child: const Text('วิธีปฏิบัติ',
-                      style: TextStyle(
-                          fontSize: 23,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold))),
+                padding: const EdgeInsets.all(5),
+                child: const Text(
+                  'วิธีปฏิบัติ',
+                  style: TextStyle(
+                      fontSize: 23,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
               Expanded(
                 child: Container(
                   padding: const EdgeInsets.all(5),
@@ -171,7 +179,7 @@ class boxing_dance2_9 extends StatelessWidget {
                             Text(
                               "ท่าเลาะเลียบตูบ ผู้รำจะวาดแขนข้างหนึ่งไปข้างหน้าแบบตักช้อยปลาหงายฝ่ามือ ค่อยๆ ยกขึ้นจนได้ระดับไหล่จึงพลิกข้อมือเป็นคว่ำ แล้วสลัดปลายนี้วขึ้นเหนือศีรษะ 3 ครั้ง ลำตัวโน้มไปข้างหน้าตามแขนที่ยื่นไป ส่วนมืออีกข้างหนึ่งเหยียดตรงมาข้างหลัง หงายฝ่ามือและสลัดปลายนี้วอย่างเดียวกัน ทำอย่างนี้สลับกัน เปลี่ยนเป็นข้างซ้ายข้างขวา ส่วนเท้าทั้งสองข้างเต้นตามจังหวะการเต้นก้อนไถในแบบท่าที่ 1",
                               style: TextStyle(
-                                fontFamily: 'TH SarabunPSK',
+                                fontFamily: 'Custom',
                                 fontSize: 20,
                               ),
                             ),
@@ -182,7 +190,7 @@ class boxing_dance2_9 extends StatelessWidget {
                     ),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),

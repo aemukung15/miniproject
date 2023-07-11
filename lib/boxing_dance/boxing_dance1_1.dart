@@ -10,7 +10,11 @@ class boxing_dance1_1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'ท่าเสือออกจากเหล่า'),
+          'ท่าเสือออกจากเหล่า',
+        style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),),
         centerTitle: true,
       ),
       body: Center(

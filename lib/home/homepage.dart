@@ -20,7 +20,12 @@ class _MyHomePageState extends State<MyHomePage> {
       key: scaffoldKey,
       appBar: AppBar(
         // backgroundColor: Color.fromRGBO(70, 61, 7, 0.578),
-        title: const Text('รำมวยโบราณจังหวัดสกลนคร'),
+        title: const Text('รำมวยโบราณจังหวัดสกลนคร'
+        ,
+        style: TextStyle(
+                    fontSize: 23,
+                    fontWeight: FontWeight.bold,
+                  ),),
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -31,24 +36,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     // Add some spacing between the buttons
-                    Container(
-                      margin: const EdgeInsets.symmetric(vertical: 5),
-                      child: ElevatedButton.icon(
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                        icon: const Icon(Icons.arrow_back),
-                        label: const Text("ย้อนกลับ"),
-                        style: ElevatedButton.styleFrom(
-                          padding: const EdgeInsets.all(20.0),
-                          fixedSize: const Size(150, 60),
-                          textStyle: const TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
                     const SizedBox(width: 16),
                     Container(
                       margin: const EdgeInsets.symmetric(vertical: 5),

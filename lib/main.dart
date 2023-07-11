@@ -33,13 +33,22 @@ class MyApp extends StatelessWidget {
     }
 
     return MaterialApp(
-      title: 'Fluer Demo',
+      title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: createMaterialColor(const Color.fromARGB(255, 195, 118, 89)),
+        primarySwatch:
+            createMaterialColor(const Color.fromARGB(255, 195, 118, 89)),
         scaffoldBackgroundColor: const Color.fromARGB(255, 255, 254, 204),
       ),
-      home: const MyHomePage(
-        title: 'Home',
+      home: Scaffold(
+        body: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/tree1.png'), // Replace 'assets/tree1.png' with the actual image path in your project
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: const MyHomePage(title: 'Home'),
+        ),
       ),
     );
   }

@@ -11,7 +11,12 @@ class developer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('คณะผู้พัฒนา'
+        title: const Text(
+          'คณะผู้พัฒนา',
+          style: TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
+          ),
         ),
         centerTitle: true,
       ),
@@ -50,7 +55,8 @@ class developer extends StatelessWidget {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => const manual()),
+                            MaterialPageRoute(
+                                builder: (context) => const manual()),
                           );
                         },
                         icon: const Icon(Icons.book),
@@ -67,7 +73,7 @@ class developer extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(width: 16),
+                const SizedBox(height: 8),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -131,14 +137,38 @@ class developer extends StatelessWidget {
                     ),
                   ],
                 ),
-                const Text('นายสิทธิพร วงศ์บาตร', 
-                style: TextStyle(fontSize: 20)),
-                const Text('นักศึกษา', 
-                style: TextStyle(fontSize: 20)),
-                const Text('หนักสูตรวิชาวิทยาการคอมพิวเตอร์',
-                style: TextStyle(fontSize: 20)),
-                const Text('มหาลัยราชภัฏสกลนคร', 
-                style: TextStyle(fontSize: 20)),
+                Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Column(
+                    children: const [
+                      Text(
+                        'นายสิทธิพร วงศ์บาตร',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                      Text(
+                        'นักศึกษา',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                      Text(
+                        'หนักสูตรวิชาวิทยาการคอมพิวเตอร์',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                      Text(
+                        'มหาลัยราชภัฏสกลนคร',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 8),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -202,14 +232,39 @@ class developer extends StatelessWidget {
                     ),
                   ],
                 ),
-                const Text('ดร.นิภาพร ชนะมาร', 
-                style: TextStyle(fontSize: 20)),
-                const Text('อาจารย์', 
-                style: TextStyle(fontSize: 20)),
-                const Text('สาขาวิทยาการคอมพิวเตอร์',
-                style: TextStyle(fontSize: 20)),
-                const Text('มหาลัยราชภัฏสกลนคร', 
-                style: TextStyle(fontSize: 20)),
+                Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Column(
+                    children: const [
+                      Text(
+                        'ดร.นิภาพร ชนะมาร',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                      Text(
+                        'อาจารย์',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                      Text(
+                        'สาขาวิทยาการคอมพิวเตอร์',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                      Text(
+                        'มหาลัยราชภัฏสกลนคร',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                      SizedBox(height: 8),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 8),
               ],
             ),
           ),

@@ -9,7 +9,11 @@ class boxing_dance1_13 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ท่าม้ากระทืบโรง'
+        title: const Text('ท่าม้ากระทืบโรง',
+        style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),
         ),
         centerTitle: true,
       ),
