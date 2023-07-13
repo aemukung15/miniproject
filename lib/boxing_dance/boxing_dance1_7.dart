@@ -9,7 +9,13 @@ class boxing_dance1_7 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ท่าไก่เลียบเล้า'
+        title: const Text('ท่าไก่เลียบเล้า',
+          style: TextStyle(
+            fontFamily: 'TH SarabunPSK',
+            fontSize: 25,
+            color: Color.fromARGB(255, 255, 255, 255),
+            fontWeight: FontWeight.bold,
+          ),
         ),
         centerTitle: true,
       ),
@@ -152,13 +158,13 @@ class boxing_dance1_7 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่าไก่เลียบเล้า มีลักษณะเด่น คือ ผู้แสดงจะย่อขาที่ยืนอยู่ให้สูงขึ้นในระดับเอว เปลี่ยนขาที่ใช้เท้ากระทุ้งพื้นเป็นยืนขาเดียว แขนทั้งสองยกขึ้นร่ายรำไปมาแบบ “นาคีม้วนหาง” แล้วเกร็งท่อนแขนข้างหนึ่ง ยกขึ้นตั้งฉากกับล าตัวตั้งศอกไว้ที่เข่า แขนอีกข้างหนึ่งกางศอกกำมือตั้งอยู่ที่บั้นเอว แล้วขยับลำตัวและเหยาะย่างอย่างมีจังหวะ แล้วยืนทรงตัวด้วยขาข้างเดียว ยืดตัวตรงอย่างสง่าผ่าเผย ส่วนแขนทั้งสองข้างก็ร่ายรำไป แล้วม้วนข้อมือยกสูงขึ้น ๆ จนสุดแขนในรูปตัว วี และเงยหน้ามองตามมือขึ้นไป แล้วตวัดแขนเหวี่ยงข้ามศีรษะย่อเข่าลง และหมุนตัวกลับขยับลำตัวเหยาะย่างอย่างมีจังหวะ ทำเหมือนครั้งแรก แต่คนละข้างไป ทำกี่รอบก็ได้แล้วแต่พละกำลังของผู้แสดง",

@@ -9,7 +9,13 @@ class boxing_dance2_2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ท่าหวะพราย'
+        title: const Text('ท่าหวะพราย',
+          style: TextStyle(
+            fontFamily: 'TH SarabunPSK',
+            fontSize: 25,
+            color: Color.fromARGB(255, 255, 255, 255),
+            fontWeight: FontWeight.bold,
+          ),
         ),
         centerTitle: true,
       ),
@@ -162,13 +168,13 @@ class boxing_dance2_2 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่าหวะพราย ผู้รำจะโน้มตัวลงไปข้างหน้าพร้อมกับม้วนแขนทั้งสองข้างเข้ามาในสีข้าง แล้วยกแขนสูงขึ้นเหนือศีรษะ ตระหวัดปลายนิ้วมือไปข้างหน้า 3 ครั้ง เงยหน้าขึ้นมองดูมือ ส่วนเท้ายังเต้นอยู่ตามจังหวะในท่าที่หนึ่ง ทำอย่างนี้ไปจนรอบ เป็นการปัดเสนียดจัญไร ภูตพราย ผี ปีศาจและสิ่งไม่ดีไปให้พ้นจากตัว",

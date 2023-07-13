@@ -13,6 +13,12 @@ class record extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           'ประวัติรำมวยโบราณ',
+          style: TextStyle(
+            fontFamily: 'TH SarabunPSK',
+            fontSize: 25,
+            color: Color.fromARGB(255, 255, 255, 255),
+            fontWeight: FontWeight.bold,
+          ),
           textAlign: TextAlign.center,
         ),
         centerTitle: true,

@@ -11,7 +11,13 @@ class developer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('คณะผู้พัฒนา'
+        title: const Text('คณะผู้พัฒนา',
+          style: TextStyle(
+            fontFamily: 'TH SarabunPSK',
+            fontSize: 25,
+            color: Color.fromARGB(255, 255, 255, 255),
+            fontWeight: FontWeight.bold,
+          ),
         ),
         centerTitle: true,
       ),
@@ -92,8 +98,8 @@ class developer extends StatelessWidget {
                                     ),
                                     Container(
                                       padding: const EdgeInsets.all(5.0),
-                                      child: Column(
-                                        children: const [
+                                      child: const Column(
+                                        children: [
                                           Text(
                                             'นายสิทธิพร วงศ์บาตร',
                                             style: TextStyle(fontSize: 20),
@@ -163,8 +169,8 @@ class developer extends StatelessWidget {
                                     ),
                                     Container(
                                       padding: const EdgeInsets.all(8.0),
-                                      child: Column(
-                                        children: const [
+                                      child: const Column(
+                                        children: [
                                           Text(
                                             'ดร. นิภาพร ชนะมาร',
                                             style: TextStyle(fontSize: 20),

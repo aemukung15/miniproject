@@ -9,7 +9,13 @@ class boxing_dance1_12 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ท่าล่อแก้วเมกขลา'
+        title: const Text('ท่าล่อแก้วเมกขลา',
+          style: TextStyle(
+            fontFamily: 'TH SarabunPSK',
+            fontSize: 25,
+            color: Color.fromARGB(255, 255, 255, 255),
+            fontWeight: FontWeight.bold,
+          ),
         ),
         centerTitle: true,
       ),
@@ -162,13 +168,13 @@ class boxing_dance1_12 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่าล่อแก้วเมกขลา มีลักษณะเด่น คือ ผู้แสดงจะยื่นเท้า ที่อยู่ข้างหลังไปข้างหน้า และโน้มตัวมาข้างหลัง พร้อมกับกางแขนทั้งสองข้าง แล้วเหยียดตรงไปข้างหน้าและข้างหลังในระดับ 45 องศา ปลายมือกวัดแกว่งในท่ารำ และม้วนแขนทั้งสองข้าง เข้ามาบริเวณหน้าอก โน้มตัวไปข้างหน้า แล้ววาดแขนกางเหยียดออกไปเป็นท่าเดิม โดยจะทำอยู่ 2 – 3 ครั้ง",

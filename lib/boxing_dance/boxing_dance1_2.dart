@@ -9,7 +9,13 @@ class boxing_dance1_2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ท่าย่างสามขุม'
+        title: const Text('ท่าย่างสามขุม',
+          style: TextStyle(
+            fontFamily: 'TH SarabunPSK',
+            fontSize: 25,
+            color: Color.fromARGB(255, 255, 255, 255),
+            fontWeight: FontWeight.bold,
+          ),
         ),
         centerTitle: true,
       ),
@@ -162,13 +168,13 @@ class boxing_dance1_2 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่าย่างสามขุม มีลักษณะเด่นคือ การเหยาะย่างอย่างทะมัดทะแมง ซึ่งเป็นท่าต่อเนื่องจากรำถวายแถน คือให้ลดแขน ทั้งสองที่ชูเหนือศีรษะลงมา ให้มือข้างหนึ่งวางไว้ที่ขาซึ่งยกอยู่แล้ว โดยกำมือตั้งไว้ที่ขา และมืออีกข้างหนึ่งกำวางไว้ที่บั้นเอว กางศอกทั้งสองข้าง ยกไหล่ให้ผึ่งผาย ส่ายตามองหาคู่ต่อสู้ แล้วเหยาะย่างไปข้างหน้า โดยกระทืบเท้าลงซ้นอย่างหนัก 3 ครั้ง แล้วยืนทรงตัวด้วยขาข้างเดียวอย่างสง่า ผ่าเผย โดยสอดส่ายสายตาเข้าหาคู่ต่อสู้",

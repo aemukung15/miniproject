@@ -9,7 +9,13 @@ class boxing_dance2_4 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ท่าน้าวเฮียวไผ่หรือน้าวเรียวไผ่'
+        title: const Text('ท่าน้าวเฮียวไผ่หรือน้าวเรียวไผ่',
+          style: TextStyle(
+            fontFamily: 'TH SarabunPSK',
+            fontSize: 25,
+            color: Color.fromARGB(255, 255, 255, 255),
+            fontWeight: FontWeight.bold,
+          ),
         ),
         centerTitle: true,
       ),
@@ -162,13 +168,13 @@ class boxing_dance2_4 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่าน้าวเฮียวไผ่หรือน้าวเรียวไผ่ ผู้รำจะเบนขาที่ยกสูงให้เอียงมาอยู่อีกข้างหนึ่งปล่อยแขนที่วางไว้ให้หย่อนลงมาข้างๆขา พร้อมกับเหวี่ยงแขนที่อยู่ขั้นเอวให้โน้มน้าวขึ้นพ้นศีรษะมาตั้งศอกกำมือไว้ที่บั้นเอวตามเดิม ส่วนแขนข้างหน้าที่หย่อนลงให้งอข้อศอกขึ้น และตั้งไว้ที่ขาซึ่งไว้แล้ว เหยาะย่างย่อตัวให้ต่ำเตี้ย เอียงไหล่ลงตามจินตนาการยอดไผ่ที่ต้องลมยิ่มน้าวโน้มโอนเอนอ่อนช้อยย้อยต่ำลงมาฉันนั้น",

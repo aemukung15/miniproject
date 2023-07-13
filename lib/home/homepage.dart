@@ -20,7 +20,13 @@ class _MyHomePageState extends State<MyHomePage> {
       key: scaffoldKey,
       appBar: AppBar(
         // backgroundColor: Color.fromRGBO(70, 61, 7, 0.578),
-        title: const Text('รำมวยโบราณจังหวัดสกลนคร'),
+        title: const Text('รำมวยโบราณจังหวัดสกลนคร',
+          style: TextStyle(
+            fontFamily: 'TH SarabunPSK',
+            fontSize: 25,
+            color: Color.fromARGB(255, 255, 255, 255),
+            fontWeight: FontWeight.bold,
+          ),),
       ),
       body: SingleChildScrollView(
         child: Center(

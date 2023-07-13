@@ -9,7 +9,13 @@ class boxing_dance1_10 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ท่าเตี้ยต่ำเสือหมอบ'
+        title: const Text('ท่าเตี้ยต่ำเสือหมอบ',
+          style: TextStyle(
+            fontFamily: 'TH SarabunPSK',
+            fontSize: 25,
+            color: Color.fromARGB(255, 255, 255, 255),
+            fontWeight: FontWeight.bold,
+          ),
         ),
         centerTitle: true,
       ),
@@ -162,13 +168,13 @@ class boxing_dance1_10 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่าเตี้ยต่ำเสือหมอบ เป็นท่าที่ต่อเนื่องจากกินนรเข้าถ้ามีลักษณะเด่น คือ ผู้แสดงจะกำหมัดกระทุ้งศอกลงกับพื้นข้างหน้า สองถึงสามครั้ง ส่วนแขนอีกข้างหนึ่งกำหมัดตั้งไว้ที่บั้นเอว โดยเปลี่ยนทำเช่นนี้ทั้งแขนซ้ายและแขนขวาสลับกัน 2 – 3 ครั้ง ขาที่เหยียดออกไปก็ใช้ปลายเท้าตบกับพื้นตามจังหวะดนตรี และผู้แสดงจะหมอบตัวลงจนติดกับพื้น โดยให้ลำแขนและฝ่ามือ แนบกับพื้น จากนั้นจะทำการวาดแขนทั้งสองข้างกวาดไปกับพื้น ที่อยู่ข้างหน้า ครั้นแล้วจะใช้มือทั้งสองตบพื้นอย่างแรง พร้อมกับยกลำตัวขึ้นสูง โดยแขนทำหน้าที่ยันกับพื้นพยุงตัวให้ตรง สอดส่ายสายตาไปทั่ว แล้วหมอบลงกับพื้นอีกและยกตัวขึ้นอีก ผู้แสดงจะทำวนอยู่ 2 – 3 ครั้ง",
