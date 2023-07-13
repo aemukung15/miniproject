@@ -1,5 +1,3 @@
-// ignore_for_file: use_key_in_widget_constructors
-
 import 'package:flutter/material.dart';
 import 'package:miniproject/boxing_dance/boxing_dance1_10.dart';
 import 'package:miniproject/boxing_dance/boxing_dance1_11.dart';
@@ -30,6 +28,7 @@ import 'package:miniproject/lib/bibliography.dart';
 import 'boxing_dance/boxing_dance1_1.dart';
 
 class MyDrawer extends StatelessWidget {
+  // ignore: use_key_in_widget_constructors
   const MyDrawer({Key? key});
 
   @override
@@ -43,10 +42,10 @@ class MyDrawer extends StatelessWidget {
                 Container(
                   color: const Color.fromARGB(255, 195, 118,
                       89), // Use Color.fromARGB to set the background color
-                  child: DrawerHeader(
+                  child: const DrawerHeader(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Icon(
                           Icons.menu_book, // Replace with the desired icon
                           size: 80,
@@ -67,19 +66,6 @@ class MyDrawer extends StatelessWidget {
                     ),
                   ),
                 ),
-                // Container(
-                //   color: const Color.fromARGB(255, 195, 118,
-                //       89), // Use Color.fromARGB to set the background color
-                //   child: const Text(
-                //     '[------------>เมนู<-------------]',
-                //     style: TextStyle(
-                //       fontSize: 30,
-                //       color: Color.fromARGB(255, 255, 255,
-                //           255), // Use Color.fromARGB to set the text color
-                //     ),
-                //     textAlign: TextAlign.center,
-                //   ),
-                // ),
                 ListTile(
                   leading: const Icon(
                     Icons.home,
@@ -92,6 +78,7 @@ class MyDrawer extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const MyHomePage(
+                          home: Scaffold(),
                           title: 'myhomepage',
                         ),
                       ),

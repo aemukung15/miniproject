@@ -166,13 +166,13 @@ class boxing_dance2_3 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่าย้ายเล้าหรือย่างสามขุม ผู้รำจะยกขาข้างหนึ่งอยู่ระดับเอว ทรงตัวอยู่ด้วยขาข้างเดียว แขนข้างหนึ่งกำมือวางไว้ที่ขาที่ยกไว้แล้วกางศอก ยกไหล่ให้ผึ่งส่วนแขนอีกข้างหนึ่งวางไว้ที่บั้นเอวกางศอกยกไหล่เช่นเดียวกัน แล้วเหยาะย่างอย่างสง่าไปข้างหน้าสามก้าว ตามจังหวะเสียงกลองและยืนทรงตัวอยู่ด้วยขาข้างเดียวกำมือทั้งสองวางไว้ที่ขาและบั้นเอวเช่นเดียวกับที่ทำมาแล้ว ยืดตัวให้ตรงสายตามองกวาดไปให้กว้างและไกล ทำสลับไปจนสุดรอบ",

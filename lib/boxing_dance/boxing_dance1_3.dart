@@ -166,13 +166,13 @@ class boxing_dance1_3 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่ากุมภัณฑ์ถอยทัพ มีลักษณะเด่น คือ การแสดงลีลาท่าทางถอยไปข้างหลัง โดยก้าวขาที่ยกสูงระดับเอวอยู่นั้นไปข้างหน้า พร้อมกับยกมือที่ตั้งอยู่ที่ขา ให้สูงและเหวี่ยงข้ามศีรษะไปตั้งไว้ ที่บั้นเอว กำมือให้แน่น ส่วนมืออีกข้างหนึ่ง ตระหวัดลงข้างล่าง ม้วนแขนขึ้นมาให้ตั้งไว้ที่เข่า ซึ่งยกขายื่นไปข้างหน้ารออยู่แล้ว ให้ทำหน้าตากลอกหลอกล่อ โดยใช้ขายังยืนทรงตัวอยู่ข้างเดียว เมื่อได้จังหวะดนตรีผู้แสดงก็จะเปลี่ยนข้าง ในลักษณะถอยไปข้างหลังอย่างเดิมจนรู้สึกว่าถอยมาอยู่กลางเวที พอที่จะแสดงรำท่าต่อไปได้สะดวก เป็นการถอยมาเพื่อตั้งหลักเพื่อเข้าสู่ท่าลับหอกโมกขศักดิ์ต่อไป",

@@ -166,13 +166,13 @@ class boxing_dance1_14 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่ายกแขนสองข้าง และส่งขาข้างหนึ่ง ไปข้างหลัง กางแขนทั้งสองออกเต็มที่ ให้ได้ระดับไหล่ แล้วม้วนแขนทั้งสองเข้ามาในลำตัวบริเวณสีข้างทั้งสอง แล้วโน้มตัวไปข้างหน้าเหยาะย่างไปตามจังหวะดนตรีท่าช้างโขลงทะลายป่า เป็นท่าสุดท้ายของการแสดงมวยโบราณท่ารำเดี่ยว มีลักษณะเด่น คือ ผู้แสดงจะเหวี่ยง",

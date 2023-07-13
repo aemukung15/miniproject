@@ -166,13 +166,13 @@ class boxing_dance1_5 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่าตบผาบปราบมาร มีลักษณะคล้ายการตบมะผาบและฟ้อนเจิง ของภาคเหนือ คือนักมวยจะลุกขึ้นและกระโดดไปข้างหน้า พร้อมกับตบมือไปข้างหลังและข้างหน้ากับตบลอดขาทั้งสองข้าง อย่างว่องไว ติดต่อด้วยตบยอดอกทั้งสองมือ ตบขาใน เข่าใน เข่านอก ตาตุ่มใน ตาตุ่มนอก สีข้าง ใต้ศอก หลังมือ เข่า ไหล่ ส้นเท้าและขานอก เป็นอันหมดลายตบครั้งแรก แล้วกระโดดไปข้าง ๆ แสดงการตบยอดอกด้วยมือทั้งสองข้าง และต่อด้วยขาใน จนถึงขานอกอย่างที่ทำมาแล้วในลายตบครั้งแรก โดยทำสลับกันไป ทั้งนี้ ขึ้นอยู่ที่ผู้แสดงว่าจะทำกี่ครั้ง เพราะเป็นท่าที่ต้องใช้ พละกำลังมาก ต้องตบตีอย่างแรงและหนักแน่นเพื่อให้มีเสียงดังเพื่อให้เป็นที่ยำเกรงของคู่ต่อสู้",

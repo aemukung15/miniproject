@@ -87,39 +87,12 @@ class developer extends StatelessWidget {
                                 onTap: () {
                                   Navigator.of(context).pop();
                                 },
-                                child: Column(
-                                  children: [
-                                    SizedBox(
-                                      width: double.infinity,
-                                      child: Image.asset(
-                                        "assets/D_2.jpg",
-                                        fit: BoxFit.contain,
-                                      ),
-                                    ),
-                                    Container(
-                                      padding: const EdgeInsets.all(5.0),
-                                      child: Column(
-                                        children: const [
-                                          Text(
-                                            'นายสิทธิพร วงศ์บาตร',
-                                            style: TextStyle(fontSize: 20),
-                                          ),
-                                          Text(
-                                            'นักศึกษา',
-                                            style: TextStyle(fontSize: 20),
-                                          ),
-                                          Text(
-                                            'หนักสูตรวิชาวิทยาการคอมพิวเตอร์',
-                                            style: TextStyle(fontSize: 20),
-                                          ),
-                                          Text(
-                                            'มหาลัยราชภัฏสกลนคร',
-                                            style: TextStyle(fontSize: 20),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
+                                child: SizedBox(
+                                  width: double.infinity,
+                                  child: Image.asset(
+                                    "assets/D_2.jpg",
+                                    fit: BoxFit.contain,
+                                  ),
                                 ),
                               ),
                             );
@@ -147,8 +120,8 @@ class developer extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Column(
-                    children: const [
+                  child: const Column(
+                    children: [
                       Text(
                         'นายสิทธิพร วงศ์บาตร',
                         style: TextStyle(fontSize: 20),
@@ -193,8 +166,8 @@ class developer extends StatelessWidget {
                                     ),
                                     Container(
                                       padding: const EdgeInsets.all(8.0),
-                                      child: Column(
-                                        children: const [
+                                      child: const Column(
+                                        children: [
                                           Text(
                                             'ดร. นิภาพร ชนะมาร',
                                             style: TextStyle(fontSize: 20),
@@ -242,8 +215,8 @@ class developer extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Column(
-                    children: const [
+                  child: const Column(
+                    children: [
                       Text(
                         'ดร.นิภาพร ชนะมาร',
                         style: TextStyle(fontSize: 20),

@@ -166,13 +166,13 @@ class boxing_dance2_1 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่ากาเต้นก้อนไถ ผู้รำจะกำมือทั้งสองข้างไว้ที่บั้นเอว ยกไหล่กางศอกขาย่อกางออกพองามก้าวไปข้างหน้าในลักษณะเต้นและลงส้นเท้าเอียงตัวเล็กน้อย เข้ากับจังหวะดนตรี แขนทั้งสองกาง กำมือติดเอว ส่ายตัวช้าๆไปตามจังหวะอันเป็นจินตนาการกาที่เต้นไปตามก้อนดินที่ชาวนาไถพลิกขึ้นมา เพื่อจะหากินอาหารปลา จิ้งหรีดและตัวแมลงต่างๆ",

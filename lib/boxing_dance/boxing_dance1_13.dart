@@ -159,13 +159,13 @@ class boxing_dance1_13 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่าม้ากระทืบโรง มีลักษณะเด่น คือ ผู้แสดงจะทรงตัวค่อยๆ ลุกขึ้นยืน พร้อมกับม้วนแขนทั้งสองข้างไปมา ในลักษณะควงหมัดเป็นวงกลมหลาย ๆ รอบ พร้อมกับยกเท้าขึ้นและกระทืบลงกับพื้นอย่างแรงและหนักแน่นจำนวน 3 ครั้ง ",

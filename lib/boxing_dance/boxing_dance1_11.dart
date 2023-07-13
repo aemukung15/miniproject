@@ -156,13 +156,13 @@ class boxing_dance1_11 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่าทรพีชนพ่อ เป็นท่าที่ต่อเนื่องจากท่าเตี้ยต่ำเสือหมอบ มีลักษณะเด่น คือ ผู้แสดงจะตบพื้นอย่างแรง และใช้ศอกทั้งสองข้าง ที่กางออกขวิดลงที่พื้นไปมาอย่างรวดเร็ว",

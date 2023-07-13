@@ -3,7 +3,7 @@ import '../manual.dart';
 import '../drawer.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({Key? key, required this.title, required Scaffold home}) : super(key: key);
 
   final String title;
 

@@ -166,13 +166,13 @@ class boxing_dance2_6 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่าช้างม้วนงวง ผู้รำจะยกขายืนชิดติดกันแล้วยกเข่าไปข้างหน้าให้สูงระดับเอวม้วนท่อนแขนช่วงล่างทั้งสองแขน หมุนลักษณะควงหมัดกลมหลายๆรอบ อยู่เหนือขาที่ยกไว้ พร้อมกับก้าวขาสืบเท้าไปข้างหน้า 3 ก้าว หยุดยืนยกขาข้างหนึ่งมาข้างหลังงอเข่าให้สูงขึ้นพร้อมกับเหวี่ยงแขนทั้งสองออกจนสุดแขน โน้มตัวไปข้างหน้าย่อเข่าลงเล็กน้อย แล้วม้วนแขนทั้งสองข้างหมุนควงหมัดวงกลมและก้าวขาสืบเท้าไปข้างหน้า 3 ก้าว เหมือนครั้งก่อนไปจนรอบ",

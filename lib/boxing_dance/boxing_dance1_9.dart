@@ -166,13 +166,13 @@ class boxing_dance1_9 extends StatelessWidget {
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Scrollbar(
+                  child: const Scrollbar(
                     child: SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.all(8),
+                        padding: EdgeInsets.all(8),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const <Widget>[
+                          children: <Widget>[
                             SizedBox(height: 5),
                             Text(
                               "ท่ากินนรเข้าถ้า มีลักษณะเด่น คือ ผู้แสดงจะโน้มตัวไปข้างหน้า แล้วถอยขาข้างหนึ่งยื่นไปข้างหลัง ค่อย ๆ ย่อตัวให้เตี้ยลงทีละน้อย จนขาหลังถึงพื้น ส่วนขาหน้าตั้งเข่าชันไว้ ส่วนมือทั้งสองก็ร่ายรำไปตามจังหวะดนตรีเรียกว่า “กินนรเข้าถ้า” ต่อมาจะโน้มตัวไป ข้างหลัง จนนั่งอยู่บนส้นเท้าข้างหลัง ส่วนมือทั้งสองก็ร่ายรำไปเรื่อย ๆ แล้วโน้มตัวไปข้างหน้าจนเข่าที่ตั้งชันอยู่จดกับพื้น เรียกว่า “กินนรลงสรง”",
