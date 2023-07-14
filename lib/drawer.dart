@@ -35,6 +35,7 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       child: SafeArea(
         child: Scrollbar(
           child: SingleChildScrollView(
@@ -67,26 +68,13 @@ class MyDrawer extends StatelessWidget {
                     ),
                   ),
                 ),
-                // Container(
-                //   color: const Color.fromARGB(255, 195, 118,
-                //       89), // Use Color.fromARGB to set the background color
-                //   child: const Text(
-                //     '[------------>เมนู<-------------]',
-                //     style: TextStyle(
-                //       fontSize: 30,
-                //       color: Color.fromARGB(255, 255, 255,
-                //           255), // Use Color.fromARGB to set the text color
-                //     ),
-                //     textAlign: TextAlign.center,
-                //   ),
-                // ),
                 ListTile(
                   leading: const Icon(
                     Icons.home,
                     color: Color.fromARGB(255, 195, 118,
                         89), // Use Color.fromARGB to set the icon color
                   ),
-                  title: const Text("หน้าแรก"),
+                  title: const Text("หน้าแรก",),
                   onTap: () {
                     Navigator.push(
                       context,

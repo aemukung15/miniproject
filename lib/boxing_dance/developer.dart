@@ -1,4 +1,3 @@
-// ignore_for_file: dead_code
 import 'package:flutter/material.dart';
 import 'package:miniproject/drawer.dart';
 import 'package:miniproject/manual.dart';
@@ -11,212 +10,264 @@ class developer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('คณะผู้พัฒนา',
+        title: const Text(
+          'คณะผู้พัฒนา',
           style: TextStyle(
-            fontFamily: 'TH SarabunPSK',
             fontSize: 25,
-            color: Color.fromARGB(255, 255, 255, 255),
             fontWeight: FontWeight.bold,
           ),
         ),
         centerTitle: true,
       ),
-      body: Center(
-        child: Scrollbar(
-          child: SingleChildScrollView(
-            child: Column(
-              children: <Widget>[
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const SizedBox(
-                        width: 16), // Add some spacing between the buttons
-                    Container(
-                      margin: const EdgeInsets.symmetric(vertical: 5),
-                      child: ElevatedButton.icon(
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                        icon: const Icon(Icons.arrow_back),
-                        label: const Text("ย้อนกลับ"),
-                        style: ElevatedButton.styleFrom(
-                          padding: const EdgeInsets.all(20.0),
-                          fixedSize: const Size(150, 60),
-                          textStyle: const TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image:
+                AssetImage('assets/tree2.png'), // Replace with your image path
+            fit: BoxFit.fill,
+          ),
+        ),
+        child: Center(
+          child: Scrollbar(
+            child: SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const SizedBox(
+                          width: 16), // Add some spacing between the buttons
+                      Container(
+                        margin: const EdgeInsets.symmetric(vertical: 5),
+                        child: ElevatedButton.icon(
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                          icon: const Icon(Icons.arrow_back),
+                          label: const Text("ย้อนกลับ"),
+                          style: ElevatedButton.styleFrom(
+                            padding: const EdgeInsets.all(20.0),
+                            fixedSize: const Size(150, 60),
+                            textStyle: const TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    const SizedBox(width: 16),
-                    Container(
-                      margin: const EdgeInsets.symmetric(vertical: 5),
-                      child: ElevatedButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => const manual()),
-                          );
-                        },
-                        icon: const Icon(Icons.book),
-                        label: const Text("คู่มือ"),
-                        style: ElevatedButton.styleFrom(
-                          padding: const EdgeInsets.all(20.0),
-                          fixedSize: const Size(150, 60),
-                          textStyle: const TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
+                      const SizedBox(width: 16),
+                      Container(
+                        margin: const EdgeInsets.symmetric(vertical: 5),
+                        child: ElevatedButton.icon(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const manual()),
+                            );
+                          },
+                          icon: const Icon(Icons.book),
+                          label: const Text("คู่มือ"),
+                          style: ElevatedButton.styleFrom(
+                            padding: const EdgeInsets.all(20.0),
+                            fixedSize: const Size(150, 60),
+                            textStyle: const TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-                const SizedBox(width: 16),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    GestureDetector(
-                      onTap: () {
-                        showDialog(
-                          context: context,
-                          builder: (BuildContext context) {
-                            return Dialog(
-                              child: GestureDetector(
-                                onTap: () {
-                                  Navigator.of(context).pop();
-                                },
-                                child: Column(
-                                  children: [
-                                    SizedBox(
-                                      width: double.infinity,
-                                      child: Image.asset(
-                                        "assets/D_2.jpg",
-                                        fit: BoxFit.contain,
-                                      ),
-                                    ),
-                                    Container(
-                                      padding: const EdgeInsets.all(5.0),
-                                      child: const Column(
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return Dialog(
+                                child: GestureDetector(
+                                  onTap: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  child: SizedBox(
+                                    width: double.infinity,
+                                    child: IntrinsicHeight(
+                                      child: Column(
                                         children: [
-                                          Text(
+                                          Image.asset(
+                                            "assets/D_2.jpg",
+                                            fit: BoxFit.contain,
+                                          ),
+                                          const SizedBox(height: 8),
+                                          const Text(
                                             'นายสิทธิพร วงศ์บาตร',
                                             style: TextStyle(fontSize: 20),
                                           ),
-                                          Text(
+                                          const Text(
                                             'นักศึกษา',
                                             style: TextStyle(fontSize: 20),
                                           ),
-                                          Text(
+                                          const Text(
                                             'หนักสูตรวิชาวิทยาการคอมพิวเตอร์',
                                             style: TextStyle(fontSize: 20),
                                           ),
-                                          Text(
+                                          const Text(
                                             'มหาลัยราชภัฏสกลนคร',
                                             style: TextStyle(fontSize: 20),
                                           ),
+                                          const SizedBox(height: 8),
                                         ],
                                       ),
                                     ),
-                                  ],
+                                  ),
                                 ),
-                              ),
-                            );
-                          },
-                        );
-                      },
-                      child: Container(
-                        margin: const EdgeInsets.symmetric(vertical: 5),
-                        child: Image.asset(
-                          "assets/D_2.jpg",
-                          width: 300, // Set the desired width for the image
-                          height: 300, // Set the desired height for the image
+                              );
+                            },
+                          );
+                        },
+                        child: Container(
+                          margin: const EdgeInsets.symmetric(vertical: 5),
+                          child: Image.asset(
+                            "assets/D_2.jpg",
+                            width: 300, // Set the desired width for the image
+                            height: 300, // Set the desired height for the image
+                          ),
                         ),
                       ),
+                    ],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 255, 255, 255),
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 1,
+                      ),
+                      borderRadius: BorderRadius.circular(10),
                     ),
-                  ],
-                ),
-                const Text('นายสิทธิพร วงศ์บาตร', 
-                style: TextStyle(fontSize: 20)),
-                const Text('นักศึกษา', 
-                style: TextStyle(fontSize: 20)),
-                const Text('หนักสูตรวิชาวิทยาการคอมพิวเตอร์',
-                style: TextStyle(fontSize: 20)),
-                const Text('มหาลัยราชภัฏสกลนคร', 
-                style: TextStyle(fontSize: 20)),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    GestureDetector(
-                      onTap: () {
-                        showDialog(
-                          context: context,
-                          builder: (BuildContext context) {
-                            return Dialog(
-                              child: GestureDetector(
-                                onTap: () {
-                                  Navigator.of(context).pop();
-                                },
-                                child: Column(
-                                  children: [
-                                    SizedBox(
-                                      width: double.infinity,
-                                      child: Image.asset(
-                                        "assets/dr.jpg",
-                                        fit: BoxFit.contain,
-                                      ),
-                                    ),
-                                    Container(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: const Column(
+                    child: const Column(
+                      children: [
+                        Text(
+                          'นายสิทธิพร วงศ์บาตร',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        Text(
+                          'นักศึกษา',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        Text(
+                          'หนักสูตรวิชาวิทยาการคอมพิวเตอร์',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        Text(
+                          'มหาลัยราชภัฏสกลนคร',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return Dialog(
+                                child: GestureDetector(
+                                  onTap: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  child: SizedBox(
+                                    width: double.infinity,
+                                    child: IntrinsicHeight(
+                                      child: Column(
                                         children: [
-                                          Text(
-                                            'ดร. นิภาพร ชนะมาร',
+                                          Image.asset(
+                                            "assets/dr.jpg",
+                                            fit: BoxFit.contain,
+                                          ),
+                                          const SizedBox(height: 8),
+                                          const Text(
+                                            'ดร.นิภาพร ชนะมาร',
                                             style: TextStyle(fontSize: 20),
                                           ),
-                                          Text(
+                                          const Text(
                                             'อาจารย์',
                                             style: TextStyle(fontSize: 20),
                                           ),
-                                          Text(
+                                          const Text(
                                             'สาขาวิทยาการคอมพิวเตอร์',
                                             style: TextStyle(fontSize: 20),
                                           ),
-                                          Text(
+                                          const Text(
                                             'มหาลัยราชภัฏสกลนคร',
                                             style: TextStyle(fontSize: 20),
                                           ),
+                                          const SizedBox(height: 8),
                                         ],
                                       ),
                                     ),
-                                  ],
+                                  ),
                                 ),
-                              ),
-                            );
-                          },
-                        );
-                      },
-                      child: Container(
-                        margin: const EdgeInsets.symmetric(vertical: 5),
-                        child: Image.asset(
-                          "assets/dr.jpg",
-                          width: 300, // Set the desired width for the image
-                          height: 300, // Set the desired height for the image
+                              );
+                            },
+                          );
+                        },
+                        child: Container(
+                          margin: const EdgeInsets.symmetric(vertical: 5),
+                          child: Image.asset(
+                            "assets/dr.jpg",
+                            width: 300, // Set the desired width for the image
+                            height: 300, // Set the desired height for the image
+                          ),
                         ),
                       ),
+                    ],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 255, 255, 255),
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 1,
+                      ),
+                      borderRadius: BorderRadius.circular(10),
                     ),
-                  ],
-                ),
-                const Text('ดร.นิภาพร ชนะมาร', 
-                style: TextStyle(fontSize: 20)),
-                const Text('อาจารย์', 
-                style: TextStyle(fontSize: 20)),
-                const Text('สาขาวิทยาการคอมพิวเตอร์',
-                style: TextStyle(fontSize: 20)),
-                const Text('มหาลัยราชภัฏสกลนคร', 
-                style: TextStyle(fontSize: 20)),
-              ],
+                    child: const Column(
+                      children: [
+                        Text(
+                          'ดร.นิภาพร ชนะมาร',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        Text(
+                          'อาจารย์',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        Text(
+                          'สาขาวิทยาการคอมพิวเตอร์',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        Text(
+                          'มหาลัยราชภัฏสกลนคร',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        SizedBox(height: 8),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                ],
+              ),
             ),
           ),
         ),
