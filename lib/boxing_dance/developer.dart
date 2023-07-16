@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:miniproject/drawer.dart';
-import 'package:miniproject/manual.dart';
 
 // ignore: camel_case_types
 class developer extends StatelessWidget {
   const developer({super.key});
+  // ignore: use_key_in_widget_constructors
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +16,7 @@ class developer extends StatelessWidget {
             fontSize: 25,
             fontWeight: FontWeight.bold,
           ),
+          textAlign: TextAlign.center,
         ),
         centerTitle: true,
       ),
@@ -23,7 +24,7 @@ class developer extends StatelessWidget {
         decoration: const BoxDecoration(
           image: DecorationImage(
             image:
-                AssetImage('assets/tree2.png'), // Replace with your image path
+                AssetImage('assets/cover3.png'), // Replace with your image path
             fit: BoxFit.fill,
           ),
         ),
@@ -32,54 +33,6 @@ class developer extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const SizedBox(
-                          width: 16), // Add some spacing between the buttons
-                      Container(
-                        margin: const EdgeInsets.symmetric(vertical: 5),
-                        child: ElevatedButton.icon(
-                          onPressed: () {
-                            Navigator.pop(context);
-                          },
-                          icon: const Icon(Icons.arrow_back),
-                          label: const Text("ย้อนกลับ"),
-                          style: ElevatedButton.styleFrom(
-                            padding: const EdgeInsets.all(20.0),
-                            fixedSize: const Size(150, 60),
-                            textStyle: const TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 16),
-                      Container(
-                        margin: const EdgeInsets.symmetric(vertical: 5),
-                        child: ElevatedButton.icon(
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const manual()),
-                            );
-                          },
-                          icon: const Icon(Icons.book),
-                          label: const Text("คู่มือ"),
-                          style: ElevatedButton.styleFrom(
-                            padding: const EdgeInsets.all(20.0),
-                            fixedSize: const Size(150, 60),
-                            textStyle: const TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
                   const SizedBox(height: 8),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -100,27 +53,9 @@ class developer extends StatelessWidget {
                                       child: Column(
                                         children: [
                                           Image.asset(
-                                            "assets/D_2.jpg",
+                                            "assets/D_2_2.png",
                                             fit: BoxFit.contain,
                                           ),
-                                          const SizedBox(height: 8),
-                                          const Text(
-                                            'นายสิทธิพร วงศ์บาตร',
-                                            style: TextStyle(fontSize: 20),
-                                          ),
-                                          const Text(
-                                            'นักศึกษา',
-                                            style: TextStyle(fontSize: 20),
-                                          ),
-                                          const Text(
-                                            'หนักสูตรวิชาวิทยาการคอมพิวเตอร์',
-                                            style: TextStyle(fontSize: 20),
-                                          ),
-                                          const Text(
-                                            'มหาลัยราชภัฏสกลนคร',
-                                            style: TextStyle(fontSize: 20),
-                                          ),
-                                          const SizedBox(height: 8),
                                         ],
                                       ),
                                     ),
@@ -129,50 +64,20 @@ class developer extends StatelessWidget {
                               );
                             },
                           );
+                          // Add your onTap logic for the first image
                         },
                         child: Container(
                           margin: const EdgeInsets.symmetric(vertical: 5),
                           child: Image.asset(
-                            "assets/D_2.jpg",
-                            width: 300, // Set the desired width for the image
-                            height: 300, // Set the desired height for the image
+                            "assets/D_2.png",
+                            width: 400, // Set the desired width for the image
+                            height: 600, // Set the desired height for the image
                           ),
                         ),
                       ),
                     ],
                   ),
-                  Container(
-                    padding: const EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 255, 255, 255),
-                      border: Border.all(
-                        color: Colors.black,
-                        width: 1,
-                      ),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: const Column(
-                      children: [
-                        Text(
-                          'นายสิทธิพร วงศ์บาตร',
-                          style: TextStyle(fontSize: 20),
-                        ),
-                        Text(
-                          'นักศึกษา',
-                          style: TextStyle(fontSize: 20),
-                        ),
-                        Text(
-                          'หนักสูตรวิชาวิทยาการคอมพิวเตอร์',
-                          style: TextStyle(fontSize: 20),
-                        ),
-                        Text(
-                          'มหาลัยราชภัฏสกลนคร',
-                          style: TextStyle(fontSize: 20),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 50),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
@@ -192,27 +97,9 @@ class developer extends StatelessWidget {
                                       child: Column(
                                         children: [
                                           Image.asset(
-                                            "assets/dr.jpg",
+                                            "assets/DR.png",
                                             fit: BoxFit.contain,
                                           ),
-                                          const SizedBox(height: 8),
-                                          const Text(
-                                            'ดร.นิภาพร ชนะมาร',
-                                            style: TextStyle(fontSize: 20),
-                                          ),
-                                          const Text(
-                                            'อาจารย์',
-                                            style: TextStyle(fontSize: 20),
-                                          ),
-                                          const Text(
-                                            'สาขาวิทยาการคอมพิวเตอร์',
-                                            style: TextStyle(fontSize: 20),
-                                          ),
-                                          const Text(
-                                            'มหาลัยราชภัฏสกลนคร',
-                                            style: TextStyle(fontSize: 20),
-                                          ),
-                                          const SizedBox(height: 8),
                                         ],
                                       ),
                                     ),
@@ -225,54 +112,23 @@ class developer extends StatelessWidget {
                         child: Container(
                           margin: const EdgeInsets.symmetric(vertical: 5),
                           child: Image.asset(
-                            "assets/dr.jpg",
-                            width: 300, // Set the desired width for the image
-                            height: 300, // Set the desired height for the image
+                            "assets/DR2.png",
+                            width: 400, // Set the desired width for the image
+                            height: 600, // Set the desired height for the image
                           ),
                         ),
                       ),
                     ],
                   ),
-                  Container(
-                    padding: const EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 255, 255, 255),
-                      border: Border.all(
-                        color: Colors.black,
-                        width: 1,
-                      ),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: const Column(
-                      children: [
-                        Text(
-                          'ดร.นิภาพร ชนะมาร',
-                          style: TextStyle(fontSize: 20),
-                        ),
-                        Text(
-                          'อาจารย์',
-                          style: TextStyle(fontSize: 20),
-                        ),
-                        Text(
-                          'สาขาวิทยาการคอมพิวเตอร์',
-                          style: TextStyle(fontSize: 20),
-                        ),
-                        Text(
-                          'มหาลัยราชภัฏสกลนคร',
-                          style: TextStyle(fontSize: 20),
-                        ),
-                        SizedBox(height: 8),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 100),
+                  // Rest of your code...
                 ],
               ),
             ),
           ),
         ),
       ),
-      drawer: const MyDrawer(),
+      endDrawer: const MyDrawer(),
     );
   }
 }

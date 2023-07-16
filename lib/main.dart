@@ -35,8 +35,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: createMaterialColor(const Color.fromARGB(255, 195, 118, 89)),
-        scaffoldBackgroundColor: const Color.fromARGB(255, 204, 255, 204),
+        primarySwatch: createMaterialColor(const Color.fromARGB(255, 80,	40,	4),),
       ),
       home: Scaffold(
         body: Stack(
@@ -44,7 +43,7 @@ class MyApp extends StatelessWidget {
             Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/tree2.png'), // Replace with your image path
+                  image: AssetImage('assets/cover2.png'), // Replace with your image path
                   fit: BoxFit.fill,
                 ),
               ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../manual.dart';
 import '../drawer.dart';
 
 // ignore: camel_case_types
@@ -23,7 +22,7 @@ class boxing_dance2_7 extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/tree2.png'), // Replace with your image path
+            image: AssetImage('assets/cover2.png'), // Replace with your image path
             fit: BoxFit.fill,
           ),
         ),
@@ -31,54 +30,7 @@ class boxing_dance2_7 extends StatelessWidget {
           child: SelectionArea(
             child: Column(
               children: <Widget>[
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const SizedBox(
-                        width: 16), // Add some spacing between the buttons
-                    Container(
-                      margin: const EdgeInsets.symmetric(vertical: 5),
-                      child: ElevatedButton.icon(
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                        icon: const Icon(Icons.arrow_back),
-                        label: const Text("ย้อนกลับ"),
-                        style: ElevatedButton.styleFrom(
-                          padding: const EdgeInsets.all(20.0),
-                          fixedSize: const Size(150, 60),
-                          textStyle: const TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 16),
-                    Container(
-                      margin: const EdgeInsets.symmetric(vertical: 5),
-                      child: ElevatedButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const manual()),
-                          );
-                        },
-                        icon: const Icon(Icons.book),
-                        label: const Text("คู่มือ"),
-                        style: ElevatedButton.styleFrom(
-                          padding: const EdgeInsets.all(20.0),
-                          fixedSize: const Size(150, 60),
-                          textStyle: const TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                const SizedBox(height: 80),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 5),
                 ),
@@ -98,7 +50,7 @@ class boxing_dance2_7 extends StatelessWidget {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: Image.asset(
-                                    "assets/21.jpg",
+                                    "assets/21.png",
                                     fit: BoxFit.contain,
                                   ),
                                 ),
@@ -110,7 +62,7 @@ class boxing_dance2_7 extends StatelessWidget {
                       child: Container(
                         margin: const EdgeInsets.symmetric(vertical: 5),
                         child: Image.asset(
-                          "assets/21.jpg",
+                          "assets/21.png",
                           width: 300, // Set the desired width for the image
                           height: 300, // Set the desired height for the image
                         ),
@@ -148,12 +100,15 @@ class boxing_dance2_7 extends StatelessWidget {
                         icon: const Icon(Icons.accessibility),
                         label: const Text('กล้ามเนื้อ'),
                         style: ElevatedButton.styleFrom(
-                            padding: const EdgeInsets.all(5),
-                            fixedSize: const Size(150, 60),
-                            textStyle: const TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            )),
+                          padding: const EdgeInsets.all(5),
+                          fixedSize: const Size(150, 60),
+                          textStyle: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          backgroundColor: const Color.fromARGB(255, 239, 214, 157), // Set the desired button color using RGB values
+                          foregroundColor: const Color.fromARGB(255, 0, 0, 0), // Set the desired text color
+                        ),
                       ),
                     ),
                   ],
@@ -163,7 +118,7 @@ class boxing_dance2_7 extends StatelessWidget {
                     child: const Text('วิธีปฏิบัติ',
                         style: TextStyle(
                             fontSize: 23,
-                            color: Colors.black,
+                            color: Colors.white,
                             fontWeight: FontWeight.bold))),
                 Expanded(
                   child: Container(
@@ -204,7 +159,7 @@ class boxing_dance2_7 extends StatelessWidget {
           ),
         ),
       ),
-      drawer: const MyDrawer(),
+      endDrawer: const MyDrawer(),
     );
   }
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../manual.dart';
 import '../drawer.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -19,13 +18,15 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       key: scaffoldKey,
       appBar: AppBar(
-        title: const Text(
-          'รำมวยโบราณจังหวัดสกลนคร',
-          style: TextStyle(
-            fontFamily: 'TH SarabunPSK',
-            fontSize: 25,
-            color: Color.fromARGB(255, 255, 255, 255),
-            fontWeight: FontWeight.bold,
+        title: const Center(
+          child: Text(
+            'รำมวยโบราณจังหวัดสกลนคร',
+            style: TextStyle(
+              fontFamily: 'TH SarabunPSK',
+              fontSize: 20,
+              color: Color.fromARGB(255, 255, 255, 255),
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ),
@@ -34,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/tree2.png'),
+                image: AssetImage('assets/cover.png'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -45,52 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: SelectionArea(
                 child: Column(
                   children: <Widget>[
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          margin: const EdgeInsets.symmetric(vertical: 5),
-                          child: ElevatedButton.icon(
-                            onPressed: () {
-                              Navigator.pop(context);
-                            },
-                            icon: const Icon(Icons.arrow_back),
-                            label: const Text("ย้อนกลับ"),
-                            style: ElevatedButton.styleFrom(
-                              padding: const EdgeInsets.all(20.0),
-                              fixedSize: const Size(150, 60),
-                              textStyle: const TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: 16),
-                        Container(
-                          margin: const EdgeInsets.symmetric(vertical: 5),
-                          child: ElevatedButton.icon(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => const manual()),
-                              );
-                            },
-                            icon: const Icon(Icons.book),
-                            label: const Text("คู่มือ"),
-                            style: ElevatedButton.styleFrom(
-                              padding: const EdgeInsets.all(20.0),
-                              fixedSize: const Size(150, 60),
-                              textStyle: const TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),const SizedBox(height: 32),
+                    const SizedBox(height: 120),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -108,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     child: SizedBox(
                                       width: double.infinity,
                                       child: Image.asset(
-                                        "assets/imaghome.png",
+                                        "assets/imagehome.png",
                                         fit: BoxFit.contain,
                                       ),
                                     ),
@@ -120,65 +76,13 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Container(
                             margin: const EdgeInsets.symmetric(vertical: 5),
                             child: Image.asset(
-                              "assets/imaghome.png",
-                              width: 300,
+                              "assets/imagehome.png",
+                              width: 400,
                               height: 300,
                             ),
                           ),
                         ),
                       ],
-                    ),
-                    Container(
-                      padding: const EdgeInsets.all(8.0),
-                      child: const Text(
-                        'ยินดีต้อนรับทุกท่าน',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontFamily: 'TH SarabunPSK',
-                          fontSize: 40,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      padding: const EdgeInsets.all(8.0),
-                      child: const Text(
-                        'แอปพลิเคชัน',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontFamily: 'TH SarabunPSK',
-                          fontSize: 40,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      padding: const EdgeInsets.all(8.0),
-                      child: const Text(
-                        'ถ่ายทอดความรู้ท่า',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontFamily: 'TH SarabunPSK',
-                          fontSize: 40,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      padding: const EdgeInsets.all(8.0),
-                      child: const Text(
-                        'จังหวัดสกลนคร',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontFamily: 'TH SarabunPSK',
-                          fontSize: 40,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
                     ),
                   ],
                 ),
@@ -187,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-      drawer: const MyDrawer(),
+      endDrawer: const MyDrawer(),
     );
   }
 }

@@ -27,42 +27,36 @@ import 'package:miniproject/boxing_dance/developer.dart';
 import 'package:miniproject/boxing_dance/record.dart';
 import 'package:miniproject/home/homepage.dart';
 import 'package:miniproject/lib/bibliography.dart';
+import 'package:miniproject/manual.dart';
 import 'boxing_dance/boxing_dance1_1.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key});
 
+  // Function to close the drawer
+  void closeDrawer(BuildContext context) {
+    Navigator.pop(context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+      // Drawer code...
       child: SafeArea(
         child: Scrollbar(
           child: SingleChildScrollView(
             child: Column(
               children: [
+                // Drawer items...
                 Container(
-                  color: const Color.fromARGB(255, 195, 118,
-                      89), // Use Color.fromARGB to set the background color
-                  child: const DrawerHeader(
+                  color: const Color.fromARGB(255, 80, 40, 4),
+                  child: DrawerHeader(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(
-                          Icons.menu_book, // Replace with the desired icon
-                          size: 80,
-                          color: Color.fromARGB(255, 255, 255, 255),
-                          // Change the icon color to your desired color
-                        ),
-                        SizedBox(height: 10),
-                        Text(
-                          '--------->เมนู<----------',
-                          style: TextStyle(
-                            fontSize: 30,
-                            color: Color.fromARGB(255, 255, 255,
-                                255), // Use Color.fromARGB to set the text color
-                          ),
-                          textAlign: TextAlign.center,
+                        const SizedBox(height: 10),
+                        Image.asset(
+                          'assets/Thai_boxing.png',
                         ),
                       ],
                     ),
@@ -74,7 +68,9 @@ class MyDrawer extends StatelessWidget {
                     color: Color.fromARGB(255, 195, 118,
                         89), // Use Color.fromARGB to set the icon color
                   ),
-                  title: const Text("หน้าแรก",),
+                  title: const Text(
+                    "หน้าแรก",
+                  ),
                   onTap: () {
                     Navigator.push(
                       context,
@@ -83,6 +79,20 @@ class MyDrawer extends StatelessWidget {
                           title: 'myhomepage',
                         ),
                       ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(
+                    Icons.history_edu,
+                    color: Color.fromARGB(255, 195, 118,
+                        89), // Use Color.fromARGB to set the icon color
+                  ),
+                  title: const Text("คู่มือ"),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const manual()),
                     );
                   },
                 ),
@@ -388,7 +398,7 @@ class MyDrawer extends StatelessWidget {
                       ),
                     );
                   },
-                ),
+                ), // Other drawer items...
               ],
             ),
           ),
