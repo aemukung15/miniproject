@@ -47,26 +47,24 @@ class MyDrawer extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                // Drawer items...
-                Container(
-                  color: const Color.fromARGB(255, 80, 40, 4),
-                  child: DrawerHeader(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const SizedBox(height: 10),
-                        Image.asset(
-                          'assets/Thai_boxing.png',
-                        ),
-                      ],
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    DrawerHeader(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset('assets/Drawer1.png',
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
+                  ],
                 ),
                 ListTile(
                   leading: const Icon(
                     Icons.home,
-                    color: Color.fromARGB(255, 195, 118,
-                        89), // Use Color.fromARGB to set the icon color
+                    color: Color.fromARGB(255, 80, 40, 4),
                   ),
                   title: const Text(
                     "หน้าแรก",
@@ -85,8 +83,7 @@ class MyDrawer extends StatelessWidget {
                 ListTile(
                   leading: const Icon(
                     Icons.history_edu,
-                    color: Color.fromARGB(255, 195, 118,
-                        89), // Use Color.fromARGB to set the icon color
+                    color: Color.fromARGB(255, 80, 40, 4),
                   ),
                   title: const Text("คู่มือ"),
                   onTap: () {
@@ -99,8 +96,7 @@ class MyDrawer extends StatelessWidget {
                 ListTile(
                   leading: const Icon(
                     Icons.history_edu,
-                    color: Color.fromARGB(255, 195, 118,
-                        89), // Use Color.fromARGB to set the icon color
+                    color: Color.fromARGB(255, 80, 40, 4),
                   ),
                   title: const Text("ประวัติความเป็นมารำมวยโบราณ"),
                   onTap: () {
@@ -113,8 +109,7 @@ class MyDrawer extends StatelessWidget {
                 ExpansionTile(
                   leading: const Icon(
                     Icons.format_list_numbered_rtl,
-                    color: Color.fromARGB(255, 195, 118,
-                        89), // Use Color.fromARGB to set the icon color
+                    color: Color.fromARGB(255, 80, 40, 4),
                   ),
                   title: const Text('ท่ารำเดี่ยว'),
                   subtitle: const Text(
@@ -268,8 +263,7 @@ class MyDrawer extends StatelessWidget {
                 ExpansionTile(
                   leading: const Icon(
                     Icons.format_list_numbered_rtl,
-                    color: Color.fromARGB(255, 195, 118,
-                        89), // Use Color.fromARGB to set the icon color
+                    color: Color.fromARGB(255, 80, 40, 4),
                   ),
                   title: const Text('ท่ารำหมู่'),
                   subtitle: const Text(
@@ -371,8 +365,7 @@ class MyDrawer extends StatelessWidget {
                 ListTile(
                   leading: const Icon(
                     Icons.person_search,
-                    color: Color.fromARGB(255, 195, 118,
-                        89), // Use Color.fromARGB to set the icon color
+                    color: Color.fromARGB(255, 80, 40, 4),
                   ),
                   title: const Text("คณะผู้พัฒนา"),
                   onTap: () {
@@ -386,8 +379,7 @@ class MyDrawer extends StatelessWidget {
                 ListTile(
                   leading: const Icon(
                     Icons.person_search,
-                    color: Color.fromARGB(255, 195, 118,
-                        89), // Use Color.fromARGB to set the icon color
+                    color: Color.fromARGB(255, 80, 40, 4),
                   ),
                   title: const Text("อ้างอิงข้อมูล"),
                   onTap: () {

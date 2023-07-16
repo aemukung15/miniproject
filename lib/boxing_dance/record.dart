@@ -36,7 +36,6 @@ class record extends StatelessWidget {
               child: SelectionArea(
                 child: Column(
                   children: <Widget>[
-                    const SizedBox(height: 80),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -64,10 +63,14 @@ class record extends StatelessWidget {
                           },
                           child: Container(
                             margin: const EdgeInsets.symmetric(vertical: 5),
-                            child: Image.asset(
-                              "assets/P_1_1_1.png",
-                              width: 400,
-                              height: 600,
+                            child: Column(
+                              children: [ // Add this line
+                                Image.asset(
+                                  "assets/P_1_1_1.png",
+                                  width: 400,
+                                  height: 700,
+                                ),
+                              ],
                             ),
                           ),
                         ),

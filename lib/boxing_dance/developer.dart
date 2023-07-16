@@ -68,15 +68,25 @@ class developer extends StatelessWidget {
                         },
                         child: Container(
                           margin: const EdgeInsets.symmetric(vertical: 5),
-                          child: Image.asset(
-                            "assets/D_2.png",
-                            width: 400, // Set the desired width for the image
-                            height: 600, // Set the desired height for the image
+                          child: Column(
+                            children: [
+                              const SizedBox(
+                                  height:
+                                      85), // Move this line inside the Column
+                              Image.asset(
+                                "assets/D_2.png",
+                                width:
+                                    400, // Set the desired width for the image
+                                height:
+                                    600, // Set the desired height for the image
+                              ),
+                            ],
                           ),
                         ),
                       ),
                     ],
                   ),
+
                   const SizedBox(height: 50),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
