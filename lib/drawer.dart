@@ -30,13 +30,16 @@ import 'package:miniproject/lib/bibliography.dart';
 import 'package:miniproject/manual.dart';
 import 'boxing_dance/boxing_dance1_1.dart';
 
-class MyDrawer extends StatelessWidget {
+class MyDrawer extends StatefulWidget {
   const MyDrawer({Key? key});
 
-  // Function to close the drawer
-  void closeDrawer(BuildContext context) {
-    Navigator.pop(context);
-  }
+  @override
+  // ignore: library_private_types_in_public_api
+  _MyDrawerState createState() => _MyDrawerState();
+}
+
+class _MyDrawerState extends State<MyDrawer> {
+  // ... other code ...
 
   @override
   Widget build(BuildContext context) {
@@ -46,18 +49,17 @@ class MyDrawer extends StatelessWidget {
         child: Scrollbar(
           child: SingleChildScrollView(
             child: Column(
-              children: [
-                Column(
+              children: [ 
+                const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     DrawerHeader(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image.asset('assets/Drawer1.png',
-                          ),
-                        ],
-                      ),
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage('assets/Drawer1.png'),
+                        ),
+                      ), child: null,
                     ),
                   ],
                 ),
