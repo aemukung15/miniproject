@@ -90,3 +90,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custo
+dependencies:
+  flutter:
+    sdk: flutter
+  carousel_slider: ^4.0.0

@@ -20,7 +20,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: const Center(
           child: Text(
-            'รำมวยโบราณจังหวัดสกลนคร',
+            'หน้าแรก',
             style: TextStyle(
               fontFamily: 'TH SarabunPSK',
               fontSize: 20,

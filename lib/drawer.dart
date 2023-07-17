@@ -91,7 +91,7 @@ class _MyDrawerState extends State<MyDrawer> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const manual()),
+                      MaterialPageRoute(builder: (context) => const Manual()),
                     );
                   },
                 ),
