@@ -29,6 +29,10 @@ import 'package:miniproject/home/homepage.dart';
 import 'package:miniproject/lib/bibliography.dart';
 import 'package:miniproject/manual.dart';
 import 'boxing_dance/boxing_dance1_1.dart';
+import 'package:flutter/services.dart'; // Add this import statement
+
+// Rest of your code...
+
 
 class MyDrawer extends StatefulWidget {
   const MyDrawer({Key? key});
@@ -47,7 +51,6 @@ class _MyDrawerState extends State<MyDrawer> {
       // Drawer code...
       child: SafeArea(
         child: Scrollbar(
-          child: SingleChildScrollView(
             child: Column(
               children: [ 
                 const Column(
@@ -380,7 +383,7 @@ class _MyDrawerState extends State<MyDrawer> {
                 ),
                 ListTile(
                   leading: const Icon(
-                    Icons.person_search,
+                    Icons.book_outlined,
                     color: Color.fromARGB(255, 80, 40, 4),
                   ),
                   title: const Text("อ้างอิงข้อมูล"),
@@ -393,11 +396,21 @@ class _MyDrawerState extends State<MyDrawer> {
                     );
                   },
                 ), // Other drawer items...
+                ListTile(
+                leading: const Icon(
+                  Icons.exit_to_app,
+                  color: Color.fromARGB(255, 80, 40, 4),
+                ),
+                title: const Text("ออกจากแอป"),
+                onTap: () {
+                  // Use `SystemNavigator` to exit the app
+                  SystemNavigator.pop();
+                },
+              ),// Other drawer items...
               ],
             ),
           ),
         ),
-      ),
     );
   }
 }
