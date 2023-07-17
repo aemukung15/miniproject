@@ -18,17 +18,16 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       key: scaffoldKey,
       appBar: AppBar(
-        title: const Center(
-          child: Text(
-            'หน้าแรก',
-            style: TextStyle(
-              fontFamily: 'TH SarabunPSK',
-              fontSize: 20,
-              color: Color.fromARGB(255, 255, 255, 255),
-              fontWeight: FontWeight.bold,
-            ),
+        title: const Text(
+          'หน้าแรก',
+          style: TextStyle(
+            fontFamily: 'TH SarabunPSK',
+            fontSize: 25,
+            color: Color.fromARGB(255, 255, 255, 255),
+            fontWeight: FontWeight.bold,
           ),
         ),
+        centerTitle: true, // ทำให้ Text อยู่ตรงกลาง
       ),
       body: Stack(
         children: [
