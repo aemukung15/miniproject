@@ -1,6 +1,9 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
-import 'package:miniproject/drawer.dart';
+import '../Drawer.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import '../slide.dart'; // Import the MySlide widget
 
 class Manual extends StatefulWidget {
   const Manual({Key? key}) : super(key: key);
@@ -36,21 +39,19 @@ class _ManualState extends State<Manual> {
         ),
         centerTitle: true,
       ),
-      endDrawer: const MyDrawer(),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image:
-                AssetImage('assets/cover3.png'), // Replace with your image path
+            image: AssetImage('assets/cover3.png'), // Replace with your image path
             fit: BoxFit.fill,
           ),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // const SizedBox(height: 300),
+            const SizedBox(height: 100), // You can adjust the height as needed
             SizedBox(
-              height: 770,
+              height: 600,
               child: InkWell(
                 onTap: () {
                   showDialog(
@@ -88,7 +89,7 @@ class _ManualState extends State<Manual> {
                     height: 600,
                     scrollPhysics: const BouncingScrollPhysics(),
                     autoPlay: true,
-                    aspectRatio: 2,
+                    aspectRatio: 1,
                     viewportFraction: 1,
                     onPageChanged: (index, reason) {
                       setState(() {
@@ -131,6 +132,7 @@ class _ManualState extends State<Manual> {
           ],
         ),
       ),
+      endDrawer: const Drawer(),
     );
   }
 }

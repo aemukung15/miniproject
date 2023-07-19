@@ -1,3 +1,4 @@
+
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
@@ -51,6 +52,7 @@ class _MyDrawerState extends State<MyDrawer> {
       // Drawer code...
       child: SafeArea(
         child: Scrollbar(
+          child: SingleChildScrollView(
             child: Column(
               children: [ 
                 const Column(
@@ -411,6 +413,7 @@ class _MyDrawerState extends State<MyDrawer> {
             ),
           ),
         ),
+      ),
     );
   }
 }

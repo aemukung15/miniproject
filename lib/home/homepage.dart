@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../drawer.dart';
+import '../slide.dart';
+// Rest of the code remains the same
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -31,20 +33,28 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Stack(
         children: [
-          Container(
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/cover.png'),
-                fit: BoxFit.cover,
+          // Background image container with BoxDecoration
+          SizedBox(
+            width: double.infinity,
+            height: double.infinity,
+            child: Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/cover.png'),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
           ),
-          const SizedBox(height: 8),
+          const MySlide(),
+          
+          // const SizedBox(height: 8),
           SingleChildScrollView(
             child: Center(
               child: SelectionArea(
                 child: Column(
                   children: <Widget>[
+                    // Add the carousel slide widget here
                     const SizedBox(height: 120),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,

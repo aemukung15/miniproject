@@ -28,7 +28,7 @@ class _MySlideState extends State<MySlide> {
         decoration: const BoxDecoration(
           image: DecorationImage(
             image:
-                AssetImage('assets/cover3.png'), // Replace with your image path
+                AssetImage('assets/cover.png'), // Replace with your image path
             fit: BoxFit.fill,
           ),
         ),
@@ -37,7 +37,7 @@ class _MySlideState extends State<MySlide> {
           children: [
             // const SizedBox(height: 300),
             SizedBox(
-              height: 100,
+              height: 60,
               child: InkWell(
                 onTap: () {
                   showDialog(
@@ -66,13 +66,13 @@ class _MySlideState extends State<MySlide> {
                         (item) => Image.asset(
                           item['image_path'],
                           fit: BoxFit.cover,
-                          width: 300,
+                          width: 400,
                         ),
                       )
                       .toList(),
                   carouselController: carouselController,
                   options: CarouselOptions(
-                    height: 600,
+                    height: 60,
                     scrollPhysics: const BouncingScrollPhysics(),
                     autoPlay: true,
                     aspectRatio: 2,
