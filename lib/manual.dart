@@ -1,9 +1,8 @@
 // ignore_for_file: unused_import
-
 import 'package:flutter/material.dart';
-import '../Drawer.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import '../slide.dart'; // Import the MySlide widget
+import '../slide2.dart';
+import '../drawer.dart';
 
 class Manual extends StatefulWidget {
   const Manual({Key? key}) : super(key: key);
@@ -42,97 +41,104 @@ class _ManualState extends State<Manual> {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/cover3.png'), // Replace with your image path
+            image:
+                AssetImage('assets/cover3.png'), // Replace with your image path
             fit: BoxFit.fill,
           ),
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            const SizedBox(height: 100), // You can adjust the height as needed
-            SizedBox(
-              height: 600,
-              child: InkWell(
-                onTap: () {
-                  showDialog(
-                    context: context,
-                    builder: (BuildContext context) {
-                      return Dialog(
-                        child: GestureDetector(
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                          child: SizedBox(
-                            width: double.infinity,
-                            child: Image.asset(
-                              imageList[currentIndex]['image_path'],
-                              fit: BoxFit.contain,
+        // ignore: avoid_unnecessary_containers
+        child: Container(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              GestureDetector(
+                child: const MySlide2(), // Wrap with Expanded
+              ),
+              const SizedBox(height: 25),
+              GestureDetector(
+                child: InkWell(
+                  onTap: () {
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return Dialog(
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).pop();
+                            },
+                            child: SizedBox(
+                              width: double.infinity,
+                              child: Image.asset(
+                                imageList[currentIndex]['image_path'],
+                                fit: BoxFit.contain,
+                              ),
                             ),
+                          ),
+                        );
+                      },
+                    );
+                  },
+                  child: CarouselSlider(
+                    items: imageList
+                        .map(
+                          (item) => Image.asset(
+                            item['image_path'],
+                            fit: BoxFit.cover,
+                            width: 300,
+                          ),
+                        )
+                        .toList(),
+                    carouselController: carouselController,
+                    options: CarouselOptions(
+                      height: 600,
+                      scrollPhysics: const BouncingScrollPhysics(),
+                      autoPlay: true,
+                      aspectRatio: 1,
+                      viewportFraction: 1,
+                      onPageChanged: (index, reason) {
+                        setState(() {
+                          currentIndex = index;
+                        });
+                      },
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                bottom: 10,
+                left: 0,
+                right: 0,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: imageList.asMap().entries.map(
+                    (entry) {
+                      return GestureDetector(
+                        onTap: () =>
+                            carouselController.animateToPage(entry.key),
+                        child: Container(
+                          width: currentIndex == entry.key ? 17 : 7,
+                          height: 7,
+                          margin: const EdgeInsets.symmetric(
+                            horizontal: 2.0,
+                          ),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: currentIndex == entry.key
+                                ? const Color.fromARGB(255, 239, 214, 157)
+                                : const Color.fromARGB(255, 0, 0, 0),
                           ),
                         ),
                       );
                     },
-                  );
-                },
-                child: CarouselSlider(
-                  items: imageList
-                      .map(
-                        (item) => Image.asset(
-                          item['image_path'],
-                          fit: BoxFit.cover,
-                          width: 300,
-                        ),
-                      )
-                      .toList(),
-                  carouselController: carouselController,
-                  options: CarouselOptions(
-                    height: 600,
-                    scrollPhysics: const BouncingScrollPhysics(),
-                    autoPlay: true,
-                    aspectRatio: 1,
-                    viewportFraction: 1,
-                    onPageChanged: (index, reason) {
-                      setState(() {
-                        currentIndex = index;
-                      });
-                    },
-                  ),
+                  ).toList(),
                 ),
               ),
-            ),
-            Positioned(
-              bottom: 10,
-              left: 0,
-              right: 0,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: imageList.asMap().entries.map(
-                  (entry) {
-                    return GestureDetector(
-                      onTap: () => carouselController.animateToPage(entry.key),
-                      child: Container(
-                        width: currentIndex == entry.key ? 17 : 7,
-                        height: 7,
-                        margin: const EdgeInsets.symmetric(
-                          horizontal: 2.0,
-                        ),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: currentIndex == entry.key
-                              ? const Color.fromARGB(255, 239, 214, 157)
-                              : const Color.fromARGB(255, 0, 0, 0),
-                        ),
-                      ),
-                    );
-                  },
-                ).toList(),
-              ),
-            ),
-            // Add more widgets here
-          ],
+              // Add more widgets here
+            ],
+          ),
         ),
       ),
-      endDrawer: const Drawer(),
+      endDrawer: const MyDrawer(),
     );
   }
 }

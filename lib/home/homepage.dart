@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../drawer.dart';
-import '../slide.dart';
+import '../slide2.dart';
 // Rest of the code remains the same
 
 class MyHomePage extends StatefulWidget {
@@ -46,8 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
           ),
-          const MySlide(),
-          
+          const MySlide2(),
           // const SizedBox(height: 8),
           SingleChildScrollView(
             child: Center(

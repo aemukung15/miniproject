@@ -14,16 +14,17 @@ class _MySlideState extends State<MySlide> {
       CarouselController(); // Declare carouselController variable
 
   List<Map<String, dynamic>> imageList = [
-    {"id": 1, "image_path": 'assets/slide1.png'},
-    {"id": 2, "image_path": 'assets/slide2.png'},
-    {"id": 3, "image_path": 'assets/slide3.png'},
-    {"id": 4, "image_path": 'assets/slide4.png'},
-    {"id": 5, "image_path": 'assets/slide5.png'},
+    {"id": 1, "image_path": 'assets/slide1_1.png'},
+    {"id": 2, "image_path": 'assets/slide2_1.png'},
+    {"id": 3, "image_path": 'assets/slide3_1.png'},
+    {"id": 4, "image_path": 'assets/slide4_1.png'},
+    {"id": 5, "image_path": 'assets/slide5_1.png'},
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // ignore: avoid_unnecessary_containers
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
@@ -37,7 +38,8 @@ class _MySlideState extends State<MySlide> {
           children: [
             // const SizedBox(height: 300),
             SizedBox(
-              height: 60,
+              width: 60, // Set the desired width for the SizedBox
+              height: 60, // Set the desired height for the SizedBox
               child: InkWell(
                 onTap: () {
                   showDialog(
@@ -45,14 +47,11 @@ class _MySlideState extends State<MySlide> {
                     builder: (BuildContext context) {
                       return Dialog(
                         child: GestureDetector(
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
                           child: SizedBox(
                             width: double.infinity,
                             child: Image.asset(
                               imageList[currentIndex]['image_path'],
-                              fit: BoxFit.contain,
+                              fit: BoxFit.fitWidth,
                             ),
                           ),
                         ),
@@ -66,7 +65,7 @@ class _MySlideState extends State<MySlide> {
                         (item) => Image.asset(
                           item['image_path'],
                           fit: BoxFit.cover,
-                          width: 400,
+                          width: 500,
                         ),
                       )
                       .toList(),
@@ -75,7 +74,7 @@ class _MySlideState extends State<MySlide> {
                     height: 60,
                     scrollPhysics: const BouncingScrollPhysics(),
                     autoPlay: true,
-                    aspectRatio: 2,
+                    aspectRatio: 1,
                     viewportFraction: 1,
                     onPageChanged: (index, reason) {
                       setState(() {

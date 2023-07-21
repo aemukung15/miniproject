@@ -36,7 +36,7 @@ class record extends StatelessWidget {
               child: SelectionArea(
                 child: Column(
                   children: <Widget>[
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 80),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
