@@ -37,9 +37,9 @@ class developer extends StatelessWidget {
               ),
             ),
           ),
-          const Expanded(
-            child: MySlide2(), // Wrap with Expanded
-          ),
+          // const Expanded(
+          //   child: MySlide2(), // Wrap with Expanded
+          // ),
           GestureDetector(
             child: Center(
               child: SelectionArea(
@@ -149,6 +149,9 @@ class developer extends StatelessWidget {
                 ),
               ),
             ),
+          ),
+          const SingleChildScrollView(
+            child: MySlide2(), // Wrap with Expanded
           ),
         ],
       ),

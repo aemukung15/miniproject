@@ -34,9 +34,8 @@ class boxing_dance2_9 extends StatelessWidget {
                 ),
               ),
             ),
-          ),
-          const Expanded(
-            child: MySlide2(), // Wrap with Expanded
+          ),GestureDetector(
+            child: const MySlide2(), // Wrap with Expanded
           ),
           // const SizedBox(height: 8),
           GestureDetector(

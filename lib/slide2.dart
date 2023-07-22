@@ -26,12 +26,11 @@ class _MySlide2State extends State<MySlide2> {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/slide.png'), // Replace with your image path
+          image: AssetImage('assets/cover2.png'), // Replace with your image path
           fit: BoxFit.contain,
         ),
       ),
       child: Column(
-        
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // const SizedBox(height: 300),

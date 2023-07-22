@@ -38,8 +38,6 @@ class _MySlideState extends State<MySlide> {
           children: [
             // const SizedBox(height: 300),
             SizedBox(
-              width: 60, // Set the desired width for the SizedBox
-              height: 60, // Set the desired height for the SizedBox
               child: InkWell(
                 onTap: () {
                   showDialog(
