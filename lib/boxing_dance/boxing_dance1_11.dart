@@ -18,7 +18,8 @@ class boxing_dance1_11 extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        centerTitle: true, // ทำให้ Text อยู่ตรงกลาง
+          centerTitle: true, 
+          backgroundColor: const Color.fromARGB(255, 80, 40, 4),
       ),
       body: Stack(
         children: [
@@ -35,8 +36,8 @@ class boxing_dance1_11 extends StatelessWidget {
               ),
             ),
           ),
-          const Expanded(
-            child: MySlide2(), // Wrap with Expanded
+          GestureDetector(
+            child: const MySlide2(), // Wrap with Expanded
           ),
           // const SizedBox(height: 8),
           GestureDetector(

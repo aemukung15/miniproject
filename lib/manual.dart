@@ -27,6 +27,7 @@ class _ManualState extends State<Manual> {
 
   @override
   Widget build(BuildContext context) {
+    int currentIndex = 0; // Set the initial currentIndex to 0
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -36,7 +37,8 @@ class _ManualState extends State<Manual> {
             fontWeight: FontWeight.bold,
           ),
         ),
-        centerTitle: true,
+          centerTitle: true, 
+          backgroundColor: const Color.fromARGB(255, 80, 40, 4),
       ),
       body: Container(
         decoration: const BoxDecoration(
@@ -102,35 +104,6 @@ class _ManualState extends State<Manual> {
                       },
                     ),
                   ),
-                ),
-              ),
-              Positioned(
-                bottom: 10,
-                left: 0,
-                right: 0,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: imageList.asMap().entries.map(
-                    (entry) {
-                      return GestureDetector(
-                        onTap: () =>
-                            carouselController.animateToPage(entry.key),
-                        child: Container(
-                          width: currentIndex == entry.key ? 17 : 7,
-                          height: 7,
-                          margin: const EdgeInsets.symmetric(
-                            horizontal: 2.0,
-                          ),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: currentIndex == entry.key
-                                ? const Color.fromARGB(255, 239, 214, 157)
-                                : const Color.fromARGB(255, 0, 0, 0),
-                          ),
-                        ),
-                      );
-                    },
-                  ).toList(),
                 ),
               ),
               // Add more widgets here

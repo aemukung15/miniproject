@@ -20,7 +20,8 @@ class record extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        centerTitle: true, // ทำให้ Text อยู่ตรงกลาง
+          centerTitle: true, 
+          backgroundColor: const Color.fromARGB(255, 80, 40, 4),
       ),
       body: Stack(
         children: [
@@ -37,6 +38,9 @@ class record extends StatelessWidget {
               ),
             ),
           ),
+          // const Expanded(
+          //   child: MySlide2(), // Wrap with Expanded
+          // ),
           GestureDetector(
             child: Center(
               child: SelectionArea(
@@ -44,7 +48,6 @@ class record extends StatelessWidget {
                   child: Scrollbar(
                     child: Column(
                       children: <Widget>[
-                        // const SizedBox(height: 30),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
@@ -85,8 +88,10 @@ class record extends StatelessWidget {
                                             85), // Move this line inside the Column
                                     Image.asset(
                                       "assets/P_1_1_1.png",
-                                      width: 345,
-                                      height: 700,
+                                      width:
+                                          400, // Set the desired width for the image
+                                      height:
+                                          600, // Set the desired height for the image
                                     ),
                                   ],
                                 ),
@@ -130,8 +135,9 @@ class record extends StatelessWidget {
                                 margin: const EdgeInsets.symmetric(vertical: 5),
                                 child: Image.asset(
                                   "assets/P_2_1_1.png",
-                                  width: 400,
-                                  height: 700,
+                                  width: 400, // Set the desired width for the image
+                                  height:
+                                      700, // Set the desired height for the image
                                 ),
                               ),
                             ),
@@ -173,8 +179,9 @@ class record extends StatelessWidget {
                                 margin: const EdgeInsets.symmetric(vertical: 5),
                                 child: Image.asset(
                                   "assets/P_3_1_1.png",
-                                  width: 400,
-                                  height: 850,
+                                  width: 400, // Set the desired width for the image
+                                  height:
+                                      850, // Set the desired height for the image
                                 ),
                               ),
                             ),

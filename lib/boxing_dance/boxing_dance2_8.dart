@@ -10,7 +10,7 @@ class boxing_dance2_8 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'ท่าแหลวถลากาตากปีก',
+          'ท่าแหลวถลา กาตากปีก',
           style: TextStyle(
             fontFamily: 'TH SarabunPSK',
             fontSize: 25,
@@ -18,7 +18,8 @@ class boxing_dance2_8 extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        centerTitle: true, // ทำให้ Text อยู่ตรงกลาง
+          centerTitle: true, 
+          backgroundColor: const Color.fromARGB(255, 80, 40, 4),
       ),
       body: Stack(
         children: [
@@ -35,8 +36,8 @@ class boxing_dance2_8 extends StatelessWidget {
               ),
             ),
           ),
-          const Expanded(
-            child: MySlide2(), // Wrap with Expanded
+          GestureDetector(
+            child: const MySlide2(), // Wrap with Expanded
           ),
           // const SizedBox(height: 8),
           GestureDetector(

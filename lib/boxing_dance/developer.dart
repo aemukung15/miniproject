@@ -20,7 +20,8 @@ class developer extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        centerTitle: true, // ทำให้ Text อยู่ตรงกลาง
+          centerTitle: true, 
+          backgroundColor: const Color.fromARGB(255, 80, 40, 4),
       ),
       body: Stack(
         children: [
