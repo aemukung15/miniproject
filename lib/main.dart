@@ -1,9 +1,22 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:miniproject/home/homepage.dart';
+import 'package:miniproject/lib/Widget/ChangeNotifierProvider.dart';
+import 'package:miniproject/lib/Widget/MultiProvider.dart';
+import 'package:miniproject/srecices/thai_dthoxing_srecices.dart';
+// import '../model/provider.dart';
 
 void main() {
   runApp(const MaterialApp(home: MyApp()));
 }
+
+// void main() => runApp(MultiProvider(
+//       providers: [
+//         ChangeNotifierProvider(create: (_) => ThaiDanceServices()),
+//       ],
+//       child: const MaterialApp(home: MyApp()),
+//     ));
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -35,7 +48,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: createMaterialColor(const Color.fromARGB(255, 80,	40,	4),),
+        primarySwatch:
+            createMaterialColor(const Color.fromARGB(255, 80, 40, 4)),
       ),
       home: Scaffold(
         body: Stack(
@@ -43,7 +57,8 @@ class MyApp extends StatelessWidget {
             Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/cover2.png'), // Replace with your image path
+                  image: AssetImage(
+                      'assets/cover2.png'), // Replace with your image path
                   fit: BoxFit.fill,
                 ),
               ),

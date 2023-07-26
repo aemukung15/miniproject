@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:miniproject/drawer.dart';
-import '../slide2.dart';
+import 'package:miniproject/lib/Widget/drawer.dart';
+import 'lib/Widget/slide2.dart';
 
 // ignore: camel_case_types
 class bibliography extends StatelessWidget {

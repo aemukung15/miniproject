@@ -64,7 +64,7 @@ class _MySlide2State extends State<MySlide2> {
                       (item) => Image.asset(
                         item['image_path'],
                         fit: BoxFit.cover,
-                        // width: 500,
+                        width: 490,
                       ),
                     )
                     .toList(),

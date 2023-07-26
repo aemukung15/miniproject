@@ -28,7 +28,7 @@ import 'package:miniproject/boxing_dance/boxing_dance2_9.dart';
 import 'package:miniproject/boxing_dance/developer.dart';
 import 'package:miniproject/boxing_dance/record.dart';
 import 'package:miniproject/home/homepage.dart';
-import 'package:miniproject/lib/bibliography.dart';
+import 'package:miniproject/bibliography.dart';
 import 'package:miniproject/manual.dart';
 import 'package:flutter/services.dart'; // Add this import statement
 

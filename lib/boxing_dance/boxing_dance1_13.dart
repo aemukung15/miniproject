@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../drawer.dart';
-import '../slide2.dart';
+import 'package:miniproject/lib/Widget/drawer.dart';
+import 'package:miniproject/lib/Widget/slide2.dart';
 
 // ignore: camel_case_types
 class boxing_dance1_13 extends StatelessWidget {
@@ -160,7 +160,7 @@ class boxing_dance1_13 extends StatelessWidget {
                                 children: <Widget>[
                                   SizedBox(height: 5),
                                   Text(
-                                    "ท่าม้ากระทืบโรง มีลักษณะเด่น คือ ผู้แสดงจะทรงตัวค่อยๆ ลุกขึ้นยืน พร้อมกับม้วนแขนทั้งสองข้างไปมา ในลักษณะควงหมัดเป็นวงกลมหลาย ๆ รอบ พร้อมกับยกเท้าขึ้นและกระทืบลงกับพื้นอย่างแรงและหนักแน่นจำนวน 3 ครั้ง ",
+                                    "ท่าม้ากระทืบโรง มีลักษณะเด่น คือ ผู้แสดงจะทรงตัวค่อยๆ ลุกขึ้นยืน พร้อมกับม้วนแขนทั้งสองข้างไปมา ในลักษณะควงหมัดเป็นวงกลมหลาย ๆ รอบ พร้อมกับยกเท้าขึ้นและกระทืบลงกับพื้นอย่างแรงและหนักแน่นจำนวน 3 ครั้ง",
                                     style: TextStyle(
                                       fontFamily: 'TH SarabunPSK',
                                       fontSize: 20,
