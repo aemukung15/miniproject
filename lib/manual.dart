@@ -1,8 +1,8 @@
 // ignore_for_file: unused_import
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'lib/Widget/slide2.dart';
-import 'lib/Widget/drawer.dart';
+import 'Widget/slide2.dart';
+import 'Widget/drawer.dart';
 
 class Manual extends StatefulWidget {
   const Manual({Key? key}) : super(key: key);

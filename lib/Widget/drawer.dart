@@ -1,4 +1,3 @@
-
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
@@ -30,11 +29,12 @@ import 'package:miniproject/boxing_dance/record.dart';
 import 'package:miniproject/home/homepage.dart';
 import 'package:miniproject/bibliography.dart';
 import 'package:miniproject/manual.dart';
-import 'package:flutter/services.dart'; // Add this import statement
+import 'package:flutter/services.dart';
 
+import '../model/step.model.dart';
+import '../services/thai_dthoxing_services.dart'; // Add this import statement
 
 // Rest of your code...
-
 
 class MyDrawer extends StatefulWidget {
   const MyDrawer({Key? key});
@@ -47,6 +47,22 @@ class MyDrawer extends StatefulWidget {
 class _MyDrawerState extends State<MyDrawer> {
   // ... other code ...
 
+  StepServices stepServices = StepServices();
+  List<StepModel>? stepModel;
+
+  @override
+  void initState() {
+    super.initState();
+    getStepsData(); // Call the method to fetch the step data
+  }
+
+  Future<void> getStepsData() async {
+    List<StepModel>? steps = await stepServices.getAllStepServices();
+    setState(() {
+      stepModel = steps;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -55,7 +71,7 @@ class _MyDrawerState extends State<MyDrawer> {
         child: Scrollbar(
           child: SingleChildScrollView(
             child: Column(
-              children: [ 
+              children: [
                 const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -65,10 +81,12 @@ class _MyDrawerState extends State<MyDrawer> {
                           fit: BoxFit.fill,
                           image: AssetImage('assets/Drawer1.png'),
                         ),
-                      ), child: null,
+                      ),
+                      child: null,
                     ),
                   ],
                 ),
+
                 ListTile(
                   leading: const Icon(
                     Icons.home,
@@ -88,6 +106,7 @@ class _MyDrawerState extends State<MyDrawer> {
                     );
                   },
                 ),
+
                 ListTile(
                   leading: const Icon(
                     Icons.history_edu,
@@ -400,16 +419,16 @@ class _MyDrawerState extends State<MyDrawer> {
                   },
                 ), // Other drawer items...
                 ListTile(
-                leading: const Icon(
-                  Icons.exit_to_app,
-                  color: Color.fromARGB(255, 80, 40, 4),
-                ),
-                title: const Text("ออกจากแอป"),
-                onTap: () {
-                  // Use `SystemNavigator` to exit the app
-                  SystemNavigator.pop();
-                },
-              ),// Other drawer items...
+                  leading: const Icon(
+                    Icons.exit_to_app,
+                    color: Color.fromARGB(255, 80, 40, 4),
+                  ),
+                  title: const Text("ออกจากแอป"),
+                  onTap: () {
+                    // Use `SystemNavigator` to exit the app
+                    SystemNavigator.pop();
+                  },
+                ), // Other drawer items...
               ],
             ),
           ),

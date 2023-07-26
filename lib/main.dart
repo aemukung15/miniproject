@@ -2,9 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:miniproject/home/homepage.dart';
-import 'package:miniproject/lib/Widget/ChangeNotifierProvider.dart';
-import 'package:miniproject/lib/Widget/MultiProvider.dart';
-import 'package:miniproject/srecices/thai_dthoxing_srecices.dart';
+import 'package:miniproject/Widget/MultiProvider.dart';
+import 'package:miniproject/services/thai_dthoxing_services.dart';
 // import '../model/provider.dart';
 
 void main() {

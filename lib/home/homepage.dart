@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:miniproject/lib/Widget/drawer.dart';
-import 'package:miniproject/lib/Widget/slide.dart';
+import 'package:miniproject/Widget/drawer.dart';
+import 'package:miniproject/Widget/slide.dart';
 // Rest of the code remains the same
 
 class MyHomePage extends StatefulWidget {

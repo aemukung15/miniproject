@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:miniproject/lib/Widget/drawer.dart';
-import 'package:miniproject/lib/Widget/slide2.dart';
+import 'package:miniproject/Widget/drawer.dart';
+import 'package:miniproject/Widget/slide2.dart';
 
 // ignore: camel_case_types
 class boxing_dance2_2 extends StatelessWidget {
