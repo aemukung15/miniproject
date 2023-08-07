@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:miniproject/model/step.model.dart';
 
 class StepServices with ChangeNotifier {
+  // ignore: non_constant_identifier_names
   String ENDPOINT = "http://192.168.1.102:8000";
   late String api; // Remove the initialization from here
 

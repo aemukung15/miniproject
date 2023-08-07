@@ -38,9 +38,6 @@ class bibliography extends StatelessWidget {
               ),
             ),
           ),
-          // const Expanded(
-          //   child: MySlide2(), // Wrap with Expanded
-          // ),
           GestureDetector(
             child: Center(
               child: SelectionArea(

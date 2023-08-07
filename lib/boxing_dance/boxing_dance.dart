@@ -1,8 +1,39 @@
 // import 'package:flutter/material.dart';
+// import 'package:miniproject/Widget/slide2.dart';
+// import 'package:miniproject/model/step.model.dart';
+// import 'package:miniproject/services/thai_dthoxing_services.dart';
 
-// // ignore: camel_case_types
-// class boxing_dance extends StatelessWidget {
-//   const boxing_dance({super.key});
+// class BoxingDance extends StatefulWidget {
+//   const BoxingDance({super.key});
+
+//   @override
+//   State<BoxingDance> createState() => _BoxingDanceState();
+
+// }
+
+//  // List to store fetched StepModels
+
+// class _BoxingDanceState extends State<BoxingDance> {
+//     // ignore: unused_field
+//     List<StepModel> _steps = [];
+//  @override
+//   void initState() {
+//     super.initState();
+//     // Call the method to fetch data from the API and update the state
+//     _fetchData();
+//   }
+
+//   Future<void> _fetchData() async {
+//     // Call the API method to get all steps
+//     List<StepModel>? steps = await StepServices().getAllStepServices();
+
+//     // Update the state with the fetched data
+//     if (steps != null) {
+//       setState(() {
+//         _steps = steps;
+//       });
+//     }
+//   }
 
 //   @override
 //   Widget build(BuildContext context) {
@@ -17,8 +48,8 @@
 //             fontWeight: FontWeight.bold,
 //           ),
 //         ),
-//           centerTitle: true, 
-//           backgroundColor: const Color.fromARGB(255, 80, 40, 4),
+//         centerTitle: true,
+//         backgroundColor: const Color.fromARGB(255, 80, 40, 4),
 //       ),
 //       body: Stack(
 //         children: [
@@ -64,7 +95,7 @@
 //                                     child: SizedBox(
 //                                       width: double.infinity,
 //                                       child: Image.asset(
-//                                         "",
+//                                         "assets/1.png",
 //                                         fit: BoxFit.contain,
 //                                       ),
 //                                     ),
@@ -76,9 +107,10 @@
 //                           child: Container(
 //                             margin: const EdgeInsets.symmetric(vertical: 5),
 //                             child: Image.asset(
-//                               "",
+//                               "assets/1.png",
 //                               width: 300, // Set the desired width for the image
-//                               height: 300, // Set the desired height for the image
+//                               height:
+//                                   300, // Set the desired height for the image
 //                             ),
 //                           ),
 //                         ),
@@ -102,7 +134,7 @@
 //                                       child: SizedBox(
 //                                         width: double.infinity,
 //                                         child: Image.asset(
-//                                           "",
+//                                           "assets/mgif_1.gif",
 //                                           fit: BoxFit.contain,
 //                                         ),
 //                                       ),
@@ -159,7 +191,7 @@
 //                                 children: <Widget>[
 //                                   SizedBox(height: 5),
 //                                   Text(
-//                                     "",
+//                                     'data',
 //                                     style: TextStyle(
 //                                       fontFamily: 'TH SarabunPSK',
 //                                       fontSize: 20,
@@ -180,7 +212,6 @@
 //           ),
 //         ],
 //       ),
-//       endDrawer: const MyDrawer(),
 //     );
 //   }
 // }

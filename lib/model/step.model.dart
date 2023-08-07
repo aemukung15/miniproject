@@ -8,15 +8,16 @@ class StepModel {
   String? createdAt;
   String? updatedAt;
 
-  StepModel(
-      {this.id,
-      this.stepId,
-      this.name,
-      this.detail,
-      this.stepImage,
-      this.muscleImage,
-      this.createdAt,
-      this.updatedAt});
+  StepModel({
+    this.id,
+    this.stepId,
+    this.name,
+    this.detail,
+    this.stepImage,
+    this.muscleImage,
+    this.createdAt,
+    this.updatedAt,
+  });
 
   StepModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -30,15 +31,16 @@ class StepModel {
   }
 
   Map<String, dynamic> toJson() {
+    // ignore: prefer_collection_literals, unnecessary_new
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['step_id'] = this.stepId;
-    data['name'] = this.name;
-    data['detail'] = this.detail;
-    data['step_image'] = this.stepImage;
-    data['muscle_image'] = this.muscleImage;
-    data['created_at'] = this.createdAt;
-    data['updated_at'] = this.updatedAt;
+    data['id'] = id;
+    data['step_id'] = stepId;
+    data['name'] = name;
+    data['detail'] = detail;
+    data['step_image'] = stepImage;
+    data['muscle_image'] = muscleImage;
+    data['created_at'] = createdAt;
+    data['updated_at'] = updatedAt;
     return data;
   }
 }

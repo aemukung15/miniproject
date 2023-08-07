@@ -32,7 +32,7 @@ dependencies:
     sdk: flutter
   carousel_slider: ^4.2.1
   # carousel_pro: ^1.0.0
-  # carousel_pro: ^2.0.0-nullsafety.0  # Example of a null-safe version of carousel_pro package
+  carousel_pro: ^2.0.0-nullsafety.0  # Example of a null-safe version of carousel_pro package
   google_nav_bar: ^5.0.6
 
   # The following adds the Cupertino Icons font to your application.
